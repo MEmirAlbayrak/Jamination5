@@ -31,27 +31,43 @@ public class ShieldCharacterScript : MonoBehaviour
     [SerializeField] GameObject AxeGameObject;
 
     [SerializeField] List<GameObject> Axes = new List<GameObject>();
+    [SerializeField] float turningSpeed;
 
     Vector2 diraction;
     float angle;
 
-
-    public GameObject[] RotatingAxes;
+    [SerializeField] GameObject RotateAxe1, RotateAxe2;
+     public List<GameObject> RotatingAxes = new List<GameObject>(2);
 
     void Start()
     {
+
+        GameObject rotateAxeGO1 = Instantiate(RotateAxe1, new Vector3(transform.position.x-2f,transform.position.y,transform.position.z), Quaternion.identity);
+        GameObject rotateAxeGO2 = Instantiate(RotateAxe2, new Vector3(transform.position.x + 2f, transform.position.y, transform.position.z), Quaternion.identity);
+        RotatingAxes.Add(rotateAxeGO1);
+        RotatingAxes.Add(rotateAxeGO2);
         axeCount = maxAxeCount;
         reloadTimer = reloadMaxTimer;
     }
 
     private void FixedUpdate()
     {
+
+
+
+        foreach (GameObject axe in RotatingAxes)
+        {
+
+            axe.transform.position = transform.position;
+            axe.transform.RotateAround(transform.position, new Vector3(0f, 0f, 1f), -turningSpeed);
         
+        
+        }
     }
     void Update()
     {
 
-
+        
         IncreaseShield();
         diraction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         angle = Mathf.Atan2(diraction.y, diraction.x) * Mathf.Rad2Deg;
