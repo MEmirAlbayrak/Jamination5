@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
     [SerializeField] float normalSpeed, nextDash;
-  public  float speed;
+    public float speed;
     [SerializeField] Transform Spriterenderer;
     public int bulletCount;
     public int maxBulletCount;
@@ -26,18 +26,18 @@ public class PlayerMovement : MonoBehaviour
     public List<GameObject> RotatingAxes = new List<GameObject>(2);
 
 
-   public bool specialAttackBool;
+    public bool specialAttackBool;
     public float specialAttackTimer;
     [SerializeField] float maxSpecialAttackTimer;
 
     [SerializeField] ShieldCharacterScript scs;
     [SerializeField] BowCharacterScript bcs;
     bool playerswitch;
-  public  bool bowChar, AxeChar;
+    public bool bowChar, AxeChar;
 
 
     public TrailRenderer charTrail;
-    public GameObject tempHolder,blackHole;
+    public GameObject tempHolder, blackHole;
 
     public bool canReturnToDash;
     Vector3 curPos;
@@ -45,20 +45,21 @@ public class PlayerMovement : MonoBehaviour
     GameObject tempHolderGO;
 
 
-   public float countTimer = 0.1f;
+    public float countTimer = 0.1f;
     bool countimerBool;
 
+    [SerializeField] PlayerAnimationHandler pah;
 
     private void Awake()
     {
-        bowChar =false;
+        bowChar = false;
         AxeChar = true;
         scs = GetComponent<ShieldCharacterScript>();
         bcs = GetComponent<BowCharacterScript>();
     }
     void Start()
     {
-        
+
 
         specialAttackTimer = maxSpecialAttackTimer;
 
@@ -96,12 +97,12 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-        if(countimerBool)
+        if (countimerBool)
         {
 
             countTimer -= Time.deltaTime;
         }
-        if(countTimer<0f)
+        if (countTimer < 0f)
         {
             canReturnToDash = true;
             countimerBool = false;
@@ -118,7 +119,7 @@ public class PlayerMovement : MonoBehaviour
             specialAttackBool = true;
         }
 
-        if(bulletCount ==7 && Input.GetMouseButtonDown(0)&& bowChar)
+        if (bulletCount == 7 && Input.GetMouseButtonDown(0) && bowChar)
         {
             specialAttackBool = true;
         }
@@ -139,7 +140,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (bulletCount <= 0)
         {
-           
+
             playerswitch = true;
             reloading = true;
         }
@@ -156,11 +157,13 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        
+
         if (scs.enabled)
         {
             if (playerswitch)
             {
+                pah.AnimationState("BowIdleAnim");
+
                 charTrail.enabled = true;
                 bcs.enabled = true;
                 maxBulletCount = 7;
@@ -177,8 +180,9 @@ public class PlayerMovement : MonoBehaviour
         {
             if (playerswitch)
             {
+                pah.AnimationState("AxeIdleAnim");
 
-                charTrail.enabled =false;
+                charTrail.enabled = false;
                 scs.shootBool = false;
                 scs.enabled = true;
                 bcs.enabled = false;
@@ -214,7 +218,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void Dash()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time > nextDash )
+        if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time > nextDash)
         {
 
             Debug.Log("dashhhh");
@@ -223,8 +227,9 @@ public class PlayerMovement : MonoBehaviour
             nextDash = Time.time + 2;
             canReturnToDash = true;
             countimerBool = true;
-            if(AxeChar) { 
-            speed *= 10;
+            if (AxeChar)
+            {
+                speed *= 10;
             }
             else
             {
@@ -280,14 +285,14 @@ public class PlayerMovement : MonoBehaviour
                 axe.transform.eulerAngles = new Vector3(0f, 0f, 0f);
                 axe.SetActive(false);
 
-                
+
             }
             specialAttackTimer = maxSpecialAttackTimer;
         }
     }
-  public  void CastBowSpecialAttack()
+    public void CastBowSpecialAttack()
     {
-        if(specialAttackBool)
+        if (specialAttackBool)
         {
             bcs.bowDistance += 40f;
 
@@ -298,39 +303,39 @@ public class PlayerMovement : MonoBehaviour
     {
         if (AxeChar)
         {
-            if(Input.GetKeyDown(KeyCode.LeftShift))
-            { 
-                if(nextDash >=Time.time && canReturnToDash)
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                if (nextDash >= Time.time && canReturnToDash)
                 {
 
                     transform.position = curPos;
                     canReturnToDash = false;
                     tempHolderGO.SetActive(false);
 
-                   
+
 
                 }
-               
+
             }
-            if(nextDash < Time.time)
+            if (nextDash < Time.time)
             {
-                if(tempHolderGO!=null)
+                if (tempHolderGO != null)
                 {
                     Destroy(tempHolderGO);
                 }
             }
 
         }
-           
-            
-            
-        
+
+
+
+
     }
     public void BowDashSkill()
     {
-        if(bowChar)
+        if (bowChar)
         {
-           
+
             tempHolderGO = Instantiate(blackHole, transform.position, Quaternion.identity);
             curPos = tempHolderGO.transform.position;
         }
@@ -339,9 +344,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (AxeChar)
         {
-             tempHolderGO = Instantiate(tempHolder, transform.position, Quaternion.identity);
-           curPos = tempHolderGO.transform.position;
-            
+            tempHolderGO = Instantiate(tempHolder, transform.position, Quaternion.identity);
+            curPos = tempHolderGO.transform.position;
+
         }
 
     }

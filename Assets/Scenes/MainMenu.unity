@@ -381,7 +381,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: nORTHENHIME
+  m_Text: Realm Distrap
 --- !u!222 &266877828
 CanvasRenderer:
   m_ObjectHideFlags: 0
