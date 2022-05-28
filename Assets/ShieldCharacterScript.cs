@@ -44,14 +44,19 @@ public class ShieldCharacterScript : MonoBehaviour
     public bool shootBool;
     bool specialAttack;
 
+    public bool getHit = false;
+
 
     [SerializeField] PlayerAnimationHandler pah;
 
     PlayerMovement pm;
+  [SerializeField]  float maxShieldGainTimer;
+    float shieldgainTimer;
+
 
     void Start()
     {
-
+        shieldgainTimer = maxShieldGainTimer;
         shootTimer = maxShootTimer;
 
         pm = GetComponent<PlayerMovement>();
@@ -75,9 +80,22 @@ public class ShieldCharacterScript : MonoBehaviour
         axeTip.transform.rotation = Quaternion.Euler(0f, 0f, angle - 90);
         axeCount = pm.bulletCount;
         maxAxeCount = pm.maxBulletCount;
-        IncreaseShield();
 
+        if(getHit)
+        {
+            shieldgainTimer -= Time.deltaTime;
+            if(shieldgainTimer<=0)
+            {
+                shieldgainTimer = maxShieldGainTimer;
+            }
 
+        }
+        if(shieldgainTimer >=maxShieldGainTimer)
+        {
+
+         IncreaseShield();
+            getHit = false;
+        }
         if (shootBool)
         {
 

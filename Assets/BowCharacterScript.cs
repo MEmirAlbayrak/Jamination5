@@ -10,13 +10,14 @@ public class BowCharacterScript : MonoBehaviour
     GameObject BowGameObject;
     [SerializeField] GameObject Bow;
     [SerializeField] Transform bowTip;
-    float speed;
+   float speed;
 
-
+    [SerializeField] float maxSpeed;
+    public float moveSpeed;
 
     bool onetime;
 
-
+    bool wallHit;
 
     bool shootBool;
     public float shootTimer;
@@ -32,8 +33,14 @@ public class BowCharacterScript : MonoBehaviour
 
     [SerializeField] PlayerAnimationHandler pah;
 
+
+    float speedTimer, maxspeedTimer;
+
     void Start()
     {
+
+        maxspeedTimer = 2f;
+        speedTimer = maxspeedTimer;
         shootTimer = maxShootTimer;
         pm = GetComponent<PlayerMovement>();
     }
@@ -43,11 +50,12 @@ public class BowCharacterScript : MonoBehaviour
     void Update()
     {
 
-
+        IncreaseSpeed();
         diraction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         angle = Mathf.Atan2(diraction.y, diraction.x) * Mathf.Rad2Deg;
         bowTip.transform.rotation = Quaternion.Euler(0f, 0f, angle - 90);
 
+     
         if (shootBool)
         {
 
@@ -95,7 +103,20 @@ public class BowCharacterScript : MonoBehaviour
 
 
     }
-  
+    void IncreaseSpeed()
+    {
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
+        if (pm.Movespeed <= maxSpeed && !wallHit)
+        {
+
+            float plusShield = Mathf.Abs(v + h)/100 ;
+
+            pm.Movespeed += plusShield;
+        }
+
+    }
+
     void ShootBow(float distance)
     {
         Quaternion bulletRot = Quaternion.Euler(bowTip.rotation.eulerAngles);
@@ -133,5 +154,21 @@ public class BowCharacterScript : MonoBehaviour
         pm.bulletCount--;
         shootBool = true;
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+       if(collision.gameObject.CompareTag("Wall"))
+        {
+            wallHit = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            wallHit = false;
+        }
     }
 }

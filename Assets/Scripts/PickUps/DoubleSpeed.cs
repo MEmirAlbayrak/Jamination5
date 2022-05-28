@@ -26,7 +26,7 @@ public class DoubleSpeed : MonoBehaviour
         if (other.gameObject.name == "") //Player name
         {
             //play sound
-            other.gameObject.GetComponent<PlayerMovement>().speed *= 2;//Double the speed
+            other.gameObject.GetComponent<PlayerMovement>().Movespeed *= 2;//Double the speed
             Destroy(this);
         }
     }

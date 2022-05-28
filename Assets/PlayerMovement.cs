@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float deadzoneMagnitude = 0.075f;
     Rigidbody2D rb;
     [SerializeField] float normalSpeed, nextDash;
-    public float speed;
+    public float Movespeed;
     [SerializeField] Transform Spriterenderer;
     public int bulletCount;
     public int maxBulletCount;
@@ -58,6 +58,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float hp;
 
     public float shield;
+
+    public float maxSpeed;
+
+    bool speedTimerBool;
+
+   public float speedTimer, maxspeedTimer;
     private void Awake()
     {
         bowChar = false;
@@ -69,10 +75,11 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         hp = 100;
-
+        maxspeedTimer = 2f;
+        speedTimer = maxspeedTimer;
         specialAttackTimer = maxSpecialAttackTimer;
 
-        speed = normalSpeed;
+        Movespeed = normalSpeed;
         rb = gameObject.GetComponent<Rigidbody2D>();
         reloadTimer = reloadMaxTimer;
         bulletCount = maxBulletCount;
@@ -107,7 +114,22 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         LookToMouse();
-        
+        if (Movespeed >= maxSpeed)
+        {
+            speedTimerBool = true;
+            
+        }
+        if (speedTimer <= 0)
+        {
+
+            Movespeed = 7f;
+            speedTimer = maxspeedTimer;
+            speedTimerBool = false;
+        }
+        if(speedTimerBool)
+        {
+            speedTimer -= Time.deltaTime;
+        }
 
         if (countimerBool)
         {
@@ -123,7 +145,7 @@ public class PlayerMovement : MonoBehaviour
         scs = GetComponent<ShieldCharacterScript>();
         bcs = GetComponent<BowCharacterScript>();
 
-
+        
 
         if (bulletCount == 4 && Input.GetMouseButtonDown(0) && AxeChar)
         {
@@ -215,7 +237,7 @@ public class PlayerMovement : MonoBehaviour
     void Movement()
     {
 
-        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * speed;
+        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * Movespeed;
 
      
 
@@ -246,18 +268,18 @@ public class PlayerMovement : MonoBehaviour
             countimerBool = true;
             if (AxeChar)
             {
-                speed *= 10;
+                Movespeed *= 10;
             }
             else
             {
-                speed *= 20;
+                Movespeed *= 20;
             }
-            rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * speed;
+            rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * Movespeed;
         }
-        else
-        {
-            speed = normalSpeed;
-        }
+        //else
+        //{
+        //    Movespeed = normalSpeed;
+        //}
 
 
 
@@ -371,7 +393,7 @@ public class PlayerMovement : MonoBehaviour
     public void TakeDamage(float damage)
     {
         float overDamage = 0;
-
+        scs.getHit = true;
         if (shield >= damage)
         {
             shield -= damage;
@@ -388,6 +410,13 @@ public class PlayerMovement : MonoBehaviour
             overDamage = damage;
         }
 
+        if(overDamage>0)
+        {
+            Movespeed = 7;
+            speedTimerBool = false;
+            speedTimer = maxspeedTimer;
+        }
+        
         hp -= overDamage;
 
         if (hp < 0)
