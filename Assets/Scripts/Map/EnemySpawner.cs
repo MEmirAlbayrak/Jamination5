@@ -46,7 +46,6 @@ public class EnemySpawner : MonoBehaviour, IRealm
 
    private void SpawnZombies()
     {
-        Debug.Log(_enemySpawnNumber);
         _enemySpawnNumber--;
         spawnTimeCounter = Random.Range(0.1f, spawnTime);
 

@@ -272,6 +272,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: AxePlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 4304921057165378654, guid: 352c202fbecf0d84fb01cb692771d4e7, type: 3}
+      propertyPath: _lookingPivot
+      value: 
+      objectReference: {fileID: 1989152908}
+    - target: {fileID: 4304921057165378654, guid: 352c202fbecf0d84fb01cb692771d4e7, type: 3}
+      propertyPath: deadzoneMagnitude
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 352c202fbecf0d84fb01cb692771d4e7, type: 3}
 --- !u!114 &269318600 stripped
@@ -44271,7 +44279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1445265468803279543, guid: 624988a18c00bbd4a8a19cd74d0f5dd2, type: 3}
       propertyPath: waveCounts.Array.data[0]
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1445265468803279543, guid: 624988a18c00bbd4a8a19cd74d0f5dd2, type: 3}
       propertyPath: waveCounts.Array.data[1]
@@ -44437,6 +44445,11 @@ Transform:
   m_Father: {fileID: 1475989957}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1989152908 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4304921058166617398, guid: 352c202fbecf0d84fb01cb692771d4e7, type: 3}
+  m_PrefabInstance: {fileID: 263134084}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1994149453
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
+    private Camera _cam;
+    
+    [SerializeField] private Transform _lookingPivot;
+    [SerializeField] private float deadzoneMagnitude = 0.075f;
     Rigidbody2D rb;
     [SerializeField] float normalSpeed, nextDash;
     public float speed;
@@ -60,6 +64,7 @@ public class PlayerMovement : MonoBehaviour
         AxeChar = true;
         scs = GetComponent<ShieldCharacterScript>();
         bcs = GetComponent<BowCharacterScript>();
+        _cam = Camera.main;
     }
     void Start()
     {
@@ -101,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-
+        LookToMouse();
         
 
         if (countimerBool)
@@ -214,6 +219,19 @@ public class PlayerMovement : MonoBehaviour
 
      
 
+    }
+
+    void LookToMouse()
+    {
+        Vector3 mousePos = _cam.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 lookDir = mousePos - _lookingPivot.position;
+
+        if (lookDir.magnitude > deadzoneMagnitude)
+        {
+            float nextAngle = (Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg) - 90;
+            Spriterenderer.transform.eulerAngles = new Vector3(0, 0, nextAngle);
+            Debug.Log(nextAngle);
+        }
     }
     void Dash()
     {

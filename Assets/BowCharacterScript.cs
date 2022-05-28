@@ -98,8 +98,8 @@ public class BowCharacterScript : MonoBehaviour
   
     void ShootBow(float distance)
     {
-
-        BowGameObject = Instantiate(Bow, bowTip.position, Quaternion.identity);
+        Quaternion bulletRot = Quaternion.Euler(bowTip.rotation.eulerAngles);
+        BowGameObject = Instantiate(Bow, bowTip.position, bulletRot);
         speed = BowGameObject.GetComponent<ThrowableBowScript>().speed;
 
 
