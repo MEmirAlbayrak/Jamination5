@@ -243,5 +243,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: AxePlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 4304921057165378653, guid: 352c202fbecf0d84fb01cb692771d4e7, type: 3}
+      propertyPath: RotateAxeDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304921057165378653, guid: 352c202fbecf0d84fb01cb692771d4e7, type: 3}
+      propertyPath: maxSpecialAttackTimer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 352c202fbecf0d84fb01cb692771d4e7, type: 3}
