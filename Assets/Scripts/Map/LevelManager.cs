@@ -5,11 +5,29 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] private List<Component> realmObjects;
-    [SerializeField] private int currentRealm = 0;
+    public int currentRealm = 0; 
+    private int wave = 0;
+    [SerializeField] private List<int> waveCounts;
+    private static LevelManager lm;
+    public static LevelManager Instance => lm;
+    
+    private void Awake() {
+        if (lm == null)
+        {
+            lm = this;
+        }
+
+        else
+        {
+            Destroy(gameObject);
+        }       
+    }
     void Start()
     {
         currentRealm--;
         ChangeRealms();
+
+        EnemySpawner.Instance.SendSpawnCommand(waveCounts[0]);
     }
 
     public void ChangeRealms(){
