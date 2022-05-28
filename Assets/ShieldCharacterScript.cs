@@ -24,7 +24,7 @@ public class ShieldCharacterScript : MonoBehaviour
 
 
 
-    
+
 
     [SerializeField] Transform axeTip;
     [SerializeField] GameObject Axe;
@@ -41,32 +41,32 @@ public class ShieldCharacterScript : MonoBehaviour
     public float shootTimer;
     public float maxShootTimer;
 
- public   bool shootBool;
+    public bool shootBool;
     bool specialAttack;
 
 
-
+    [SerializeField] PlayerAnimationHandler pah;
 
     PlayerMovement pm;
-   
+
     void Start()
     {
 
-        shootTimer =maxShootTimer;
+        shootTimer = maxShootTimer;
 
         pm = GetComponent<PlayerMovement>();
         axeDistance = pm.particleDistance;
-      
+
         axeCount = maxAxeCount;
-       
-        
+
+
     }
 
     private void FixedUpdate()
     {
 
 
-        
+
     }
     void Update()
     {
@@ -76,52 +76,56 @@ public class ShieldCharacterScript : MonoBehaviour
         axeCount = pm.bulletCount;
         maxAxeCount = pm.maxBulletCount;
         IncreaseShield();
-       
-        
-        if(shootBool)
+
+
+        if (shootBool)
         {
-           
+
             shootTimer -= Time.deltaTime;
-            if(shootTimer<=0)
+            if (shootTimer <= 0)
             {
                 shootTimer = maxShootTimer;
                 shootBool = false;
+                pah.AnimationState("AxeIdleAnim");
+
             }
         }
-        
-        
 
 
-       
-            if (Input.GetMouseButtonDown(0))
+
+
+
+
+        if (Input.GetMouseButtonDown(0))
+        {
+
+            onetime = true;
+
+            if (shootTimer == maxShootTimer)
             {
-
-                onetime = true;
-
-                if(shootTimer==maxShootTimer)
-                {
-
                 ShootAxe(axeSpeed, axeDistance);
-                }
             }
-           
-                
-               
-            onetime = false;
-                    
-                    
-                
+        }
 
-            
-        
-        
 
-      
-     
+
+        onetime = false;
+
+
+
+
+
+
+
+
+
+
         //DestroyAxe();
 
 
     }
+
+
     void IncreaseShield()
     {
         float h = Input.GetAxisRaw("Horizontal");
@@ -137,20 +141,21 @@ public class ShieldCharacterScript : MonoBehaviour
         }
 
     }
-   
+
     void ShootAxe(float speed, float distance)
     {
-       
+        pah.AnimationState("AxeAttack");
+
         AxeGameObject = Instantiate(Axe, axeTip.position, Quaternion.identity);
         AxeGameObject.GetComponent<Rigidbody2D>().velocity = axeTip.up * speed;
         Axes.Add(AxeGameObject);
         pm.bulletCount--;
-        
+
 
         shootBool = true;
-        
-        
-        
+
+
+
     }
     public void DestroyAxe()
     {
@@ -162,7 +167,7 @@ public class ShieldCharacterScript : MonoBehaviour
                 if (Vector2.Distance(gameObject.transform.position, Axe.transform.position) >= axeDistance)
                 {
                     Axes.RemoveAt(0);
-                    
+
                 }
             }
         }

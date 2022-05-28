@@ -11,12 +11,16 @@ public class ThrowableAxeScript : MonoBehaviour
     }
 
     
-    void Update()
+    void FixedUpdate()
     {
+        transform.Rotate(Vector3.forward * 50);
+
         scs = GameObject.FindObjectOfType<PlayerMovement>();
         if (Vector2.Distance(scs.transform.position,transform.position) >= scs.particleDistance)
         {
             Destroy(gameObject);
         }
     }
+
+  
 }

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Wall
   - Enemy
+  - IntroMusic
+  - AudioManager
+  - LoopMusic
   layers:
   - Default
   - TransparentFX
