@@ -24,7 +24,7 @@ public class ExplodingTrap : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "") //Player bullet
+        if (other.gameObject.CompareTag("Player")) //Player bullet
         {
             Destroy(this);
             //Play explode animaton, hurt everyone in the radius

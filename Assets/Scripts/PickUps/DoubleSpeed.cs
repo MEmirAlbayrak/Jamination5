@@ -23,7 +23,7 @@ public class DoubleSpeed : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "") //Player name
+        if (other.gameObject.CompareTag("Player")) //Player name
         {
             //play sound
             other.gameObject.GetComponent<PlayerMovement>().Movespeed *= 2;//Double the speed

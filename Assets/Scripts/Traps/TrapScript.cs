@@ -26,7 +26,7 @@ public class TrapScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "") //Player name
+        if (other.gameObject.CompareTag("Player")) //Player name
         {
             trapState = true;
             timer += Time.deltaTime;
