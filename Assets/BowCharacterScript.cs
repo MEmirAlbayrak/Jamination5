@@ -30,6 +30,7 @@ public class BowCharacterScript : MonoBehaviour
     Vector2 diraction;
     float angle;
 
+    [SerializeField] PlayerAnimationHandler pah;
 
     void Start()
     {
@@ -58,25 +59,32 @@ public class BowCharacterScript : MonoBehaviour
             }
         }
 
+        if(shootTimer < maxShootTimer)
+        {
+            pah.AnimationState("BowIdleAnim");
+        }
+
         if (pm.bulletCount > 0)
         {
 
-            
+
             if (Input.GetMouseButtonDown(0))
             {
 
                 onetime = true;
 
             }
-            if (onetime )
+            if (onetime)
             {
 
 
                 if (shootTimer == maxShootTimer)
                 {
-
-                    ShootBow( bowDistance);
+                    pah.AnimationState("BowAttackAnim");
+                    
+                    ShootBow(bowDistance);
                 }
+
                 onetime = false;
 
 
@@ -84,39 +92,42 @@ public class BowCharacterScript : MonoBehaviour
 
             }
         }
+
+
     }
-    void ShootBow( float distance)
+  
+    void ShootBow(float distance)
     {
 
         BowGameObject = Instantiate(Bow, bowTip.position, Quaternion.identity);
-         speed = BowGameObject.GetComponent<ThrowableBowScript>().speed;
-       
+        speed = BowGameObject.GetComponent<ThrowableBowScript>().speed;
+
 
         if (pm.specialAttackBool)
         {
-            if(BowGameObject.GetComponent<ThrowableBowScript>().arrowTrail!=null)
+            if (BowGameObject.GetComponent<ThrowableBowScript>().arrowTrail != null)
             {
                 BowGameObject.GetComponent<ThrowableBowScript>().speed *= 3;
-            BowGameObject.GetComponent<ThrowableBowScript>().arrowTrail.enabled = true;
+                BowGameObject.GetComponent<ThrowableBowScript>().arrowTrail.enabled = true;
                 BowGameObject.GetComponent<ThrowableBowScript>().lifeTime = 30;
                 pm.specialAttackBool = false;
-                
+
             }
         }
         else
         {
 
 
-            if(BowGameObject.GetComponent<ThrowableBowScript>().arrowTrail != null)
+            if (BowGameObject.GetComponent<ThrowableBowScript>().arrowTrail != null)
             {
-                
-            BowGameObject.GetComponent<ThrowableBowScript>().arrowTrail.enabled = false;
+
+                BowGameObject.GetComponent<ThrowableBowScript>().arrowTrail.enabled = false;
                 BowGameObject.GetComponent<ThrowableBowScript>().lifeTime = 15;
             }
         }
         BowGameObject.GetComponent<Rigidbody2D>().velocity = bowTip.up * BowGameObject.GetComponent<ThrowableBowScript>().speed;
         pm.bulletCount--;
         shootBool = true;
-        
+
     }
 }
