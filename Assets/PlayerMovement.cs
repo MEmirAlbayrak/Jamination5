@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float  normalSpeed, nextDash;
     float speed;
     DungeonManager dm;
-    float shield;
+  
 
     void Start()
     {
@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Movement();
         Dash();
+       
     }
     void Movement()
     {
@@ -38,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
 
             rb.transform.localScale = new Vector3(-4f, 4f, 4f);
         }
+       
     }
     void Dash()
     {
@@ -45,8 +47,7 @@ public class PlayerMovement : MonoBehaviour
         {
             nextDash = Time.time + 2;
 
-            float h = Input.GetAxisRaw("Horizontal");
-            float v = Input.GetAxisRaw("Vertical");
+            
             speed *= 6;
             rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * speed;
         }
@@ -58,8 +59,5 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
-    void IncreaseShield()
-    {
-
-    }
+   
 }
