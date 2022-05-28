@@ -107,6 +107,9 @@ public class BowCharacterScript : MonoBehaviour
         {
             if (BowGameObject.GetComponent<ThrowableBowScript>().arrowTrail != null)
             {
+
+                BowGameObject.GetComponent<ThrowableBowScript>().destroyBool = false;
+                BowGameObject.GetComponent<ThrowableBowScript>().damage += 10;
                 BowGameObject.GetComponent<ThrowableBowScript>().speed *= 3;
                 BowGameObject.GetComponent<ThrowableBowScript>().arrowTrail.enabled = true;
                 BowGameObject.GetComponent<ThrowableBowScript>().lifeTime = 30;
@@ -121,6 +124,7 @@ public class BowCharacterScript : MonoBehaviour
             if (BowGameObject.GetComponent<ThrowableBowScript>().arrowTrail != null)
             {
 
+                BowGameObject.GetComponent<ThrowableBowScript>().destroyBool = true;
                 BowGameObject.GetComponent<ThrowableBowScript>().arrowTrail.enabled = false;
                 BowGameObject.GetComponent<ThrowableBowScript>().lifeTime = 15;
             }

@@ -5,9 +5,12 @@ using UnityEngine;
 public class ThrowableAxeScript : MonoBehaviour
 {
    PlayerMovement scs;
+
+    public float damage;
     void Start()
     {
         scs = GameObject.FindObjectOfType<PlayerMovement>();
+        damage = 20;
     }
 
     
@@ -22,5 +25,15 @@ public class ThrowableAxeScript : MonoBehaviour
         }
     }
 
-  
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Enemy"))
+        {
+            Debug.Log("axedamage");
+            collision.GetComponent<EnemyBehavior>().TakeDamage(damage);
+        }
+        Destroy(gameObject, 0.1f);
+    }
+
+
 }

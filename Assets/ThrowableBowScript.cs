@@ -9,9 +9,11 @@ public class ThrowableBowScript : MonoBehaviour
     public TrailRenderer arrowTrail;
     public float lifeTime;
     public float speed;
+    public float damage;
+    public bool destroyBool;
     private void Awake()
     {
-        
+        damage = 10f;
         arrowTrail = GetComponentInChildren<TrailRenderer>();
     }
     void Start()
@@ -28,5 +30,25 @@ public class ThrowableBowScript : MonoBehaviour
         }
 
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Enemy"))
+        {
+            Debug.Log("bowdamage");
+            collision.GetComponent<EnemyBehavior>().TakeDamage(damage);
+            
+        }
+        DestroyBow();
+    }
+
+    public void DestroyBow()
+    {
+        if(destroyBool)
+        {
+        Destroy(gameObject, 0.1f);
+
+        }
     }
 }

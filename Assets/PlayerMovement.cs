@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
@@ -50,6 +50,10 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] PlayerAnimationHandler pah;
 
+
+    [SerializeField] float hp;
+
+    public float shield;
     private void Awake()
     {
         bowChar = false;
@@ -59,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void Start()
     {
-
+        hp = 100;
 
         specialAttackTimer = maxSpecialAttackTimer;
 
@@ -97,6 +101,9 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
+
+        
+
         if (countimerBool)
         {
 
@@ -205,15 +212,7 @@ public class PlayerMovement : MonoBehaviour
 
         rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * speed;
 
-        if (Input.GetAxisRaw("Horizontal") > .1f)
-        {
-            Spriterenderer.localScale = new Vector3(1f, 1f, 1f);
-        }
-        if (Input.GetAxisRaw("Horizontal") < -.1f)
-        {
-
-            Spriterenderer.localScale = new Vector3(-1f, 1f, 1f);
-        }
+     
 
     }
     void Dash()
@@ -349,6 +348,34 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
+    }
+
+    public void TakeDamage(float damage)
+    {
+        float overDamage = 0;
+
+        if (shield >= damage)
+        {
+            shield -= damage;
+        }
+
+       else if (shield > 0)
+        {
+            overDamage = damage - shield;
+            shield = 0;
+        }
+
+        else
+        {
+            overDamage = damage;
+        }
+
+        hp -= overDamage;
+
+        if (hp < 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
 }

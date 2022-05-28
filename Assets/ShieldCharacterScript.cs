@@ -130,14 +130,12 @@ public class ShieldCharacterScript : MonoBehaviour
     {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
-        if (shield <= maxShield && !wallHit)
+        if (pm.shield <= maxShield && !wallHit)
         {
 
             float plusShield = Mathf.Abs(v + h) / 10;
 
-            shield += plusShield;
-            shieldInt = (int)Math.Round(shield);
-
+            pm.shield += plusShield;
         }
 
     }

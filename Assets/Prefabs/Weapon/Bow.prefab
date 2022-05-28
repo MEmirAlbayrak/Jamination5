@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4478082224261063134}
   - component: {fileID: 8564271274610269395}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,8 @@ GameObject:
   - component: {fileID: 6317371097102433813}
   - component: {fileID: -786094980996996094}
   - component: {fileID: 690480542752887762}
-  m_Layer: 0
+  - component: {fileID: 5810287757033678638}
+  m_Layer: 9
   m_Name: Bow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,3 +251,21 @@ MonoBehaviour:
   arrowTrail: {fileID: 0}
   lifeTime: 0
   speed: 10
+  damage: 0
+  destroyBool: 0
+--- !u!70 &5810287757033678638
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6317371097102433812}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.019728541, y: 0.02113776}
+  m_Size: {x: 0.09887457, y: 0.3722556}
+  m_Direction: 0

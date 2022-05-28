@@ -114,7 +114,7 @@ public class EnemyBehavior : MonoBehaviour
         _rigidbody.position = _agent.nextPosition;
     }
 
-    private void TakeDamage(double damage){
+    public void TakeDamage(float damage){
         
     }
 

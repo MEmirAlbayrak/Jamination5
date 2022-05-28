@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7473564685032367910}
   - component: {fileID: 7473564685032367905}
   - component: {fileID: 8980597211959561037}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fire Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,6 +81,7 @@ MonoBehaviour:
   attackCount: 30
   bulletPosX: 0.25
   bulletPosY: 0.25
+  hp: 200
 --- !u!212 &7473564685032367911
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -242,7 +243,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7473564685188537189}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +273,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7473564685672115868}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,7 +309,7 @@ GameObject:
   - component: {fileID: 7473564687126981415}
   - component: {fileID: 7473564687126981412}
   - component: {fileID: 319385646}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ice Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -374,6 +375,7 @@ MonoBehaviour:
   attackCount: 30
   bulletPosX: 0.25
   bulletPosY: 0.25
+  hp: 200
 --- !u!212 &7473564687126981411
 SpriteRenderer:
   m_ObjectHideFlags: 0
