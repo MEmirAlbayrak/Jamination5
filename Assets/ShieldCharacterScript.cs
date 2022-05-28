@@ -9,7 +9,7 @@ public class ShieldCharacterScript : MonoBehaviour
     [SerializeField] float maxShield;
     float shield;
     [SerializeField] int shieldInt;
-    [SerializeField] float axeSpeed, axeDistance;
+    public float axeSpeed, axeDistance;
 
 
     bool wallHit;
@@ -32,40 +32,48 @@ public class ShieldCharacterScript : MonoBehaviour
 
     [SerializeField] List<GameObject> Axes = new List<GameObject>();
     [SerializeField] float turningSpeed;
+    [SerializeField] float RotateAxeDistance;
 
     Vector2 diraction;
     float angle;
 
 
      public List<GameObject> RotatingAxes = new List<GameObject>(2);
+
+
+
+
    
+    bool specialAttackBool;
+   public float specialAttackTimer;
+    [SerializeField] float  maxSpecialAttackTimer;
    
     void Start()
     {
 
-        
+        specialAttackTimer = maxSpecialAttackTimer;
         axeCount = maxAxeCount;
         reloadTimer = reloadMaxTimer;
+        foreach (GameObject axe in RotatingAxes)
+        {
+            axe.SetActive(false);
+        }
+            RotatingAxes[0].transform.position = new Vector3(transform.position.x - RotateAxeDistance, transform.position.y, transform.position.z);
+        RotatingAxes[1].transform.position = new Vector3(transform.position.x + RotateAxeDistance, transform.position.y, transform.position.z);
     }
 
     private void FixedUpdate()
     {
 
 
-        foreach (GameObject axe in RotatingAxes)
-        {
-
-            
-            axe.transform.RotateAround(transform.position, new Vector3(0f, 0f, 1f), -turningSpeed);
         
-        
-        }
     }
     void Update()
     {
 
         
         IncreaseShield();
+        CastSpecialAttack();
         diraction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         angle = Mathf.Atan2(diraction.y, diraction.x) * Mathf.Rad2Deg;
         axeTip.transform.rotation = Quaternion.Euler(0f, 0f, angle - 90);
@@ -86,6 +94,7 @@ public class ShieldCharacterScript : MonoBehaviour
         }
         else
         {
+            specialAttackBool = true;
             reloading = true;
         }
         if (Input.GetKeyDown(KeyCode.R))
@@ -97,7 +106,7 @@ public class ShieldCharacterScript : MonoBehaviour
         {
             ReloadAxe();
         }
-        DestroyAxe();
+        //DestroyAxe();
 
 
     }
@@ -149,9 +158,40 @@ public class ShieldCharacterScript : MonoBehaviour
                 if (Vector2.Distance(gameObject.transform.position, Axe.transform.position) >= axeDistance)
                 {
                     Axes.RemoveAt(0);
-                    Destroy(Axe);
+                    
                 }
             }
+        }
+    }
+
+     void CastSpecialAttack()
+    {
+        if(specialAttackBool)
+        {
+            specialAttackTimer -= Time.deltaTime;
+            foreach (GameObject axe in RotatingAxes)
+            {
+
+                axe.SetActive(true);
+                axe.transform.RotateAround(transform.position, new Vector3(0f, 0f, 1f), -turningSpeed);
+                
+
+            }
+        }
+        if(specialAttackTimer<=0)
+        {
+            specialAttackBool = false;
+            foreach (GameObject axe in RotatingAxes)
+            {
+
+                RotatingAxes[0].transform.position = new Vector3(transform.position.x - RotateAxeDistance, transform.position.y, transform.position.z);
+                RotatingAxes[1].transform.position = new Vector3(transform.position.x + RotateAxeDistance, transform.position.y, transform.position.z);
+                axe.transform.eulerAngles = new Vector3(0f, 0f, 0f);
+                axe.SetActive(false);
+
+
+            }
+            specialAttackTimer = maxSpecialAttackTimer;
         }
     }
 
