@@ -19,6 +19,7 @@ public class EnemyBehavior : MonoBehaviour
     [SerializeField] private int attackCount = 3;
     [SerializeField] private float bulletPosX = 1;
     [SerializeField] private float bulletPosY = 1;
+    [SerializeField] private float hp = 200;
     private int currentAttackCount = 0;
     private float attackCurrentDuration = 0f;
     private float attackCurrentCooldown = 0;
@@ -111,6 +112,10 @@ public class EnemyBehavior : MonoBehaviour
         _rigidbody.MoveRotation(nextAngle + angleOffset);
 
         _rigidbody.position = _agent.nextPosition;
+    }
+
+    private void TakeDamage(double damage){
+        
     }
 
         private void OnDrawGizmosSelected()

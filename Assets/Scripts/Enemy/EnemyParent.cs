@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class EnemyParent : MonoBehaviour
 {
+    private void Start() {
+        ChangeRealm(LevelManager.Instance.currentRealm);
+    }
     public void ChangeRealm(int realm){
         for (int i = 0, length = transform.childCount; i < length; i++){
             if (i == realm){
