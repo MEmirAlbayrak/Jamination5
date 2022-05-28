@@ -1,0 +1,2460 @@
+fileFormatVersion: 2
+guid: bf543afaa06a7dd4a81dd4ead41faeca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8211736912325560492
+    second: Dividers color_0
+  - first:
+      213: 1487816412942538162
+    second: Dividers color_1
+  - first:
+      213: -2543888755946075017
+    second: Dividers color_2
+  - first:
+      213: 548769245226252910
+    second: Dividers color_3
+  - first:
+      213: -3224309066712466195
+    second: Dividers color_4
+  - first:
+      213: 5037416171477135607
+    second: Dividers color_5
+  - first:
+      213: 2950518623807051223
+    second: Dividers color_6
+  - first:
+      213: -3649198798495000864
+    second: Dividers color_7
+  - first:
+      213: -4409427531067896920
+    second: Dividers color_8
+  - first:
+      213: 928332889061788296
+    second: Dividers color_9
+  - first:
+      213: -7826110887434401615
+    second: Dividers color_10
+  - first:
+      213: -2475793536842085923
+    second: Dividers color_11
+  - first:
+      213: -1981555439079334870
+    second: Dividers color_12
+  - first:
+      213: -3182477140790741682
+    second: Dividers color_13
+  - first:
+      213: 3259677274978889339
+    second: Dividers color_14
+  - first:
+      213: 3170304455795650539
+    second: Dividers color_15
+  - first:
+      213: 5351547285634870352
+    second: Dividers color_16
+  - first:
+      213: -7935246282594062483
+    second: Dividers color_17
+  - first:
+      213: 2878687313917230915
+    second: Dividers color_18
+  - first:
+      213: -98351697768317389
+    second: Dividers color_19
+  - first:
+      213: -202491193668448538
+    second: Dividers color_20
+  - first:
+      213: 5996559179605398734
+    second: Dividers color_21
+  - first:
+      213: 6492025826170538421
+    second: Dividers color_22
+  - first:
+      213: 7212934739235624189
+    second: Dividers color_23
+  - first:
+      213: 7212212731218538817
+    second: Dividers color_24
+  - first:
+      213: -2636431057224279193
+    second: Dividers color_25
+  - first:
+      213: 8469557309774804518
+    second: Dividers color_26
+  - first:
+      213: 2418341096201743742
+    second: Dividers color_27
+  - first:
+      213: 7353674853033367128
+    second: Dividers color_28
+  - first:
+      213: 6146815880089640714
+    second: Dividers color_29
+  - first:
+      213: -1614688196233899626
+    second: Dividers color_30
+  - first:
+      213: -844331366878774575
+    second: Dividers color_31
+  - first:
+      213: 6477775056318721084
+    second: Dividers color_32
+  - first:
+      213: 6286354561270824807
+    second: Dividers color_33
+  - first:
+      213: -340846889245993833
+    second: Dividers color_34
+  - first:
+      213: 4647801298369120565
+    second: Dividers color_35
+  - first:
+      213: -7750990850362113381
+    second: Dividers color_36
+  - first:
+      213: 4576493747854113665
+    second: Dividers color_37
+  - first:
+      213: -1221324376908002922
+    second: Dividers color_38
+  - first:
+      213: -3733977495290927803
+    second: Dividers color_39
+  - first:
+      213: -37769335196887472
+    second: Dividers color_40
+  - first:
+      213: -6314015384787243291
+    second: Dividers color_41
+  - first:
+      213: -5998131607340301413
+    second: Dividers color_42
+  - first:
+      213: -1708481554474393692
+    second: Dividers color_43
+  - first:
+      213: 849126735721465705
+    second: Dividers color_44
+  - first:
+      213: -7676603013357886400
+    second: Dividers color_45
+  - first:
+      213: -1664973681195323717
+    second: Dividers color_46
+  - first:
+      213: 2768609347452652751
+    second: Dividers color_47
+  - first:
+      213: -4312819646118874226
+    second: Dividers color_48
+  - first:
+      213: 4797651143775924774
+    second: Dividers color_49
+  - first:
+      213: 1835146730390733273
+    second: Dividers color_50
+  - first:
+      213: -5121175204650212352
+    second: Dividers color_51
+  - first:
+      213: -3919440639646249003
+    second: Dividers color_52
+  - first:
+      213: -640707629215903238
+    second: Dividers color_53
+  - first:
+      213: 1149842721908894250
+    second: Dividers color_54
+  - first:
+      213: -3174843058565562095
+    second: Dividers color_55
+  - first:
+      213: 7527432885300406583
+    second: Dividers color_56
+  - first:
+      213: -6583712229997083548
+    second: Dividers color_57
+  - first:
+      213: 229375242534208556
+    second: Dividers color_58
+  - first:
+      213: 8425805060364241612
+    second: Dividers color_59
+  - first:
+      213: 9053480352661449105
+    second: Dividers color_60
+  - first:
+      213: 1482947428662741668
+    second: Dividers color_61
+  - first:
+      213: -4103348390636380950
+    second: Dividers color_62
+  - first:
+      213: 1215121856299142460
+    second: Dividers color_63
+  - first:
+      213: 3325816152978336273
+    second: Dividers color_64
+  - first:
+      213: 3195859758201410930
+    second: Dividers color_65
+  - first:
+      213: -3377879515731000060
+    second: Dividers color_66
+  - first:
+      213: 6540642677587776979
+    second: Dividers color_67
+  - first:
+      213: 6110545454553358323
+    second: Dividers color_68
+  - first:
+      213: -5543287431202661060
+    second: Dividers color_69
+  - first:
+      213: 5682957356338004107
+    second: Dividers color_70
+  - first:
+      213: 4854753720923314647
+    second: Dividers color_71
+  - first:
+      213: 9099883231257425805
+    second: Dividers color_72
+  - first:
+      213: -7706294002523953636
+    second: Dividers color_73
+  - first:
+      213: -2423139724758286258
+    second: Dividers color_74
+  - first:
+      213: -4771670329845494682
+    second: Dividers color_75
+  - first:
+      213: 1608310203712373957
+    second: Dividers color_76
+  - first:
+      213: -7470906584447805320
+    second: Dividers color_77
+  - first:
+      213: -4713854863716640677
+    second: Dividers color_78
+  - first:
+      213: 6605132940579315575
+    second: Dividers color_79
+  - first:
+      213: 3144705400163440117
+    second: Dividers color_80
+  - first:
+      213: -8743366020688449214
+    second: Dividers color_81
+  - first:
+      213: -9110971984301640906
+    second: Dividers color_82
+  - first:
+      213: -6984239197470672543
+    second: Dividers color_83
+  - first:
+      213: -1227134518052953011
+    second: Dividers color_84
+  - first:
+      213: 5848815429420098688
+    second: Dividers color_85
+  - first:
+      213: 2664820559613110949
+    second: Dividers color_86
+  - first:
+      213: 7024975123389014017
+    second: Dividers color_87
+  - first:
+      213: -352764994827885221
+    second: Dividers color_88
+  - first:
+      213: -2786390971908687750
+    second: Dividers color_89
+  - first:
+      213: -3853800066188032166
+    second: Dividers color_90
+  - first:
+      213: -973207260213322735
+    second: Dividers color_91
+  - first:
+      213: 4453887377296046182
+    second: Dividers color_92
+  - first:
+      213: -3464559025831978642
+    second: Dividers color_93
+  - first:
+      213: 4168856763820300503
+    second: Dividers color_94
+  - first:
+      213: -8192852963625740653
+    second: Dividers color_95
+  - first:
+      213: 9009486255208195736
+    second: Dividers color_96
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dividers color_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3826
+        width: 1186
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8c020d633f5f170800000000000000
+      internalID: 8211736912325560492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_1
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 3896
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b59f601529c5a410800000000000000
+      internalID: 1487816412942538162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_2
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 3848
+        width: 466
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c49b197aa42bcd0800000000000000
+      internalID: -2543888755946075017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_3
+      rect:
+        serializedVersion: 2
+        x: 1877
+        y: 3895
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6abe5598be9d9700800000000000000
+      internalID: 548769245226252910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_4
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 3891
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec3888acf3f043d0800000000000000
+      internalID: -3224309066712466195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_5
+      rect:
+        serializedVersion: 2
+        x: 1959
+        y: 3895
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0f3be815f78e540800000000000000
+      internalID: 5037416171477135607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_6
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 3848
+        width: 465
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5913b4e0952f820800000000000000
+      internalID: 2950518623807051223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_7
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 3896
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e65cece6017b5dc0800000000000000
+      internalID: -3649198798495000864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_8
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 3819
+        width: 1159
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abcedbc5019ec2c0800000000000000
+      internalID: -4409427531067896920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3552
+        width: 1186
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a07d518d912ec00800000000000000
+      internalID: 928332889061788296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_10
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 3647
+        width: 1161
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8c7a5cc91146390800000000000000
+      internalID: -7826110887434401615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_11
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 3513
+        width: 1159
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9c15345e634add0800000000000000
+      internalID: -2475793536842085923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_12
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 3429
+        width: 559
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2cdeeea3d91084e0800000000000000
+      internalID: -1981555439079334870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_13
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 3455
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45fd55e6e195d3d0800000000000000
+      internalID: -3182477140790741682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_14
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 3428
+        width: 558
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ea7890633bc3d20800000000000000
+      internalID: 3259677274978889339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_15
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 3408
+        width: 1161
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: befa9850b1f2ffb20800000000000000
+      internalID: 3170304455795650539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_16
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 3352
+        width: 1159
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ce8fe07e3844a40800000000000000
+      internalID: 5351547285634870352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3135
+        width: 993
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6fedb87c8750e190800000000000000
+      internalID: -7935246282594062483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_18
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 3165
+        width: 194
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34fb57d2cd623f720800000000000000
+      internalID: 2878687313917230915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_19
+      rect:
+        serializedVersion: 2
+        x: 3267
+        y: 3338
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e7677e6a592aef0800000000000000
+      internalID: -98351697768317389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_20
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 2881
+        width: 868
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee4f3b055b903df0800000000000000
+      internalID: -202491193668448538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_21
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 3106
+        width: 1161
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4dcfe7dce083350800000000000000
+      internalID: 5996559179605398734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_22
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 3042
+        width: 566
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b98e89b71f481a50800000000000000
+      internalID: 6492025826170538421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_23
+      rect:
+        serializedVersion: 2
+        x: 3263
+        y: 3106
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4d638fded791460800000000000000
+      internalID: 7212934739235624189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_24
+      rect:
+        serializedVersion: 2
+        x: 3302
+        y: 3042
+        width: 563
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141b4d0644de61460800000000000000
+      internalID: 7212212731218538817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_25
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 3011
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76bd65ffbe3896bd0800000000000000
+      internalID: -2636431057224279193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_26
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 3007
+        width: 272
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626b0f5ef79e98570800000000000000
+      internalID: 8469557309774804518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2589
+        width: 571
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d65d00a6caf8120800000000000000
+      internalID: 2418341096201743742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_28
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 2589
+        width: 547
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856d6c041508d0660800000000000000
+      internalID: 7353674853033367128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_29
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 2889
+        width: 465
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f1978c970ed4550800000000000000
+      internalID: 6146815880089640714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_30
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 2842
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6915678f3a97799e0800000000000000
+      internalID: -1614688196233899626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_31
+      rect:
+        serializedVersion: 2
+        x: 2013
+        y: 2896
+        width: 500
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da787468155844f0800000000000000
+      internalID: -844331366878774575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_32
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 2727
+        width: 563
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c63cec71ea5e950800000000000000
+      internalID: 6477775056318721084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_33
+      rect:
+        serializedVersion: 2
+        x: 3306
+        y: 2727
+        width: 559
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f34bcba2e9d3750800000000000000
+      internalID: 6286354561270824807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_34
+      rect:
+        serializedVersion: 2
+        x: 3261
+        y: 2813
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79412b36f81154bf0800000000000000
+      internalID: -340846889245993833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_35
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 2721
+        width: 64
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53904efd7ae408040800000000000000
+      internalID: 4647801298369120565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_36
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 2655
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b920dda53e2fe6490800000000000000
+      internalID: -7750990850362113381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_37
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 2649
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18bf3adf0d8f28f30800000000000000
+      internalID: 4576493747854113665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_38
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 2643
+        width: 72
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6998fd633fbfc0fe0800000000000000
+      internalID: -1221324376908002922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_39
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 2636
+        width: 82
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545a1e1604f3e2cc0800000000000000
+      internalID: -3733977495290927803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_40
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 2630
+        width: 87
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056df206df0d97ff0800000000000000
+      internalID: -37769335196887472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_41
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 2639
+        width: 75
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eea76be57c1068a0800000000000000
+      internalID: -6314015384787243291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_42
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 2643
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b934074251b52cca0800000000000000
+      internalID: -5998131607340301413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_43
+      rect:
+        serializedVersion: 2
+        x: 2330
+        y: 2647
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af1f3004114a48e0800000000000000
+      internalID: -1708481554474393692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_44
+      rect:
+        serializedVersion: 2
+        x: 2469
+        y: 2653
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96707fb6444b8cb00800000000000000
+      internalID: 849126735721465705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2388
+        width: 585
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0442c135b3a377590800000000000000
+      internalID: -7676603013357886400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_46
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 2453
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe6af32243d4e8e0800000000000000
+      internalID: -1664973681195323717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_47
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 2388
+        width: 558
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcccdb468831c6620800000000000000
+      internalID: 2768609347452652751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_48
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 2265
+        width: 1161
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8332c4d169c524c0800000000000000
+      internalID: -4312819646118874226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_49
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 2435
+        width: 1159
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622b205db4ea49240800000000000000
+      internalID: 4797651143775924774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_50
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 2184
+        width: 541
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1c8af6a30c77910800000000000000
+      internalID: 1835146730390733273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_51
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 2211
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0042946d84eede8b0800000000000000
+      internalID: -5121175204650212352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_52
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 2184
+        width: 541
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dfc7ab11895b99c0800000000000000
+      internalID: -3919440639646249003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_53
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 2052
+        width: 1161
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af114bb4ecfbb17f0800000000000000
+      internalID: -640707629215903238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_54
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 2042
+        width: 1159
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2aa2fa0ddf05ff00800000000000000
+      internalID: 1149842721908894250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2017
+        width: 563
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111c59c2f01b0f3d0800000000000000
+      internalID: -3174843058565562095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_56
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 2013
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739aceeb350d67860800000000000000
+      internalID: 7527432885300406583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_57
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 2015
+        width: 551
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46401abdb94f1a4a0800000000000000
+      internalID: -6583712229997083548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1727
+        width: 585
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24458b5197ee2300800000000000000
+      internalID: 229375242534208556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_59
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 1881
+        width: 1161
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca03b18f097ee470800000000000000
+      internalID: 8425805060364241612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_60
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 1842
+        width: 1159
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1992d51d96c64ad70800000000000000
+      internalID: 9053480352661449105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_61
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1824
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa850254dc749410800000000000000
+      internalID: 1482947428662741668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_62
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1785
+        width: 556
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec9272116afd07c0800000000000000
+      internalID: -4103348390636380950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_63
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1630
+        width: 1161
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d068be3eafcd010800000000000000
+      internalID: 1215121856299142460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_64
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 1591
+        width: 1159
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11aa7829b2ca72e20800000000000000
+      internalID: 3325816152978336273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1622
+        width: 546
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2759f878489f95c20800000000000000
+      internalID: 3195859758201410930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_66
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 1629
+        width: 51
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40509ca2a7c5f11d0800000000000000
+      internalID: -3377879515731000060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_67
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 1618
+        width: 560
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d511688cd705ca50800000000000000
+      internalID: 6540642677587776979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1429
+        width: 552
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ffd78247b40dc450800000000000000
+      internalID: 6110545454553358323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_69
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1458
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d174f63794213b0800000000000000
+      internalID: -5543287431202661060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_70
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 1429
+        width: 541
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8048322b9bedde40800000000000000
+      internalID: 5682957356338004107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_71
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1346
+        width: 1161
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9d3af99cc8f5340800000000000000
+      internalID: 4854753720923314647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_72
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 1404
+        width: 1159
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87f1a8e597494e70800000000000000
+      internalID: 9099883231257425805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1087
+        width: 1163
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1626d43f6ebd0590800000000000000
+      internalID: -7706294002523953636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_74
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1077
+        width: 1161
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4005a832474f5ed0800000000000000
+      internalID: -2423139724758286258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_75
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 1180
+        width: 1159
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66cc94ccd1f97cdb0800000000000000
+      internalID: -4771670329845494682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_76
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 933
+        width: 1162
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c489eceb9dd15610800000000000000
+      internalID: 1608310203712373957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_77
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 616
+        width: 548
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8789cd34b02025890800000000000000
+      internalID: -7470906584447805320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_78
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 616
+        width: 548
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b581c6df9f5059eb0800000000000000
+      internalID: -4713854863716640677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_79
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 974
+        width: 1159
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f1679f9652aab50800000000000000
+      internalID: 6605132940579315575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 703
+        width: 1161
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f59efb66ec34ab20800000000000000
+      internalID: 3144705400163440117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_81
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 787
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241f4a3bde259a680800000000000000
+      internalID: -8743366020688449214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_82
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 762
+        width: 1159
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6333a2590435f8180800000000000000
+      internalID: -9110971984301640906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_83
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 495
+        width: 1159
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169b668347ff21f90800000000000000
+      internalID: -6984239197470672543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_84
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 396
+        width: 1161
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4465df48a758fee0800000000000000
+      internalID: -1227134518052953011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_85
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 527
+        width: 1159
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084a86b05aa2b2150800000000000000
+      internalID: 5848815429420098688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_86
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 196
+        width: 1167
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aaa5ed1e285bf420800000000000000
+      internalID: 2664820559613110949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_87
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 34
+        width: 1161
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100ee81a7a9bd7160800000000000000
+      internalID: 7024975123389014017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_88
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 275
+        width: 1159
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5567123b1aba1bf0800000000000000
+      internalID: -352764994827885221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_89
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 63
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78f60a8c20c459d0800000000000000
+      internalID: -2786390971908687750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_90
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 415
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a574c73124d848ac0800000000000000
+      internalID: -3853800066188032166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_91
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 79
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c572237297e72f0800000000000000
+      internalID: -973207260213322735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_92
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 63
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668b351d8f26fcd30800000000000000
+      internalID: 4453887377296046182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_93
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 0
+        width: 512
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6959e90ce96befc0800000000000000
+      internalID: -3464559025831978642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_94
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 79
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d85efe9321cad930800000000000000
+      internalID: 4168856763820300503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_95
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 63
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396d41e13a32d4e80800000000000000
+      internalID: -8192852963625740653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dividers color_96
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 0
+        width: 1159
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896e27ac300280d70800000000000000
+      internalID: 9009486255208195736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

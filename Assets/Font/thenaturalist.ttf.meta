@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 8ed50e4e34caa334cb14167979270a27
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - 'thenaturalist '
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 785f44a42f8bd6648aa61c71a0e5fd16, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
