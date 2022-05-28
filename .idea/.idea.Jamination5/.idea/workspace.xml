@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dd12f066-83c7-4fb9-89b5-10946de0d03a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jamination5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jamination5/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/my.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/my.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Traps/TrapScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Traps/TrapScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Traps/ArrowTrapScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Traps/ArrowTrapScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6b1444477c1d41c692ef6c02a838308529ac30/31/b120f368/Int32.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Traps/ArrowTrapScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -75,7 +75,7 @@
       <workItem from="1653700857190" duration="2000" />
       <workItem from="1653700892574" duration="1000" />
       <workItem from="1653700998621" duration="3349000" />
-      <workItem from="1653730462467" duration="3016000" />
+      <workItem from="1653730462467" duration="5910000" />
     </task>
     <servers />
   </component>

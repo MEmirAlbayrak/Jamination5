@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class ArrowTrapScript : MonoBehaviour
 {
-
     [SerializeField] private CapsuleCollider2D _capsuleCollider2D;
     [SerializeField] private int damage;
     [SerializeField] private float speed;
+
     [SerializeField] private float maxRange;
+
     //[SerializeField] private int maxArrowCount;
     //public int arrowCount;
     [SerializeField] private float fireRate;
@@ -26,23 +27,34 @@ public class ArrowTrapScript : MonoBehaviour
         timer = Time.deltaTime;
         if (timer >= fireRate)
         {
-            ArrowGameObject = Instantiate(Arrow, direction, Quaternion.identity);
+            /*ArrowGameObject = Instantiate(Arrow, direction, Quaternion.identity);
             ArrowGameObject.GetComponent<Rigidbody2D>().velocity = (direction * speed);
             Arrows.Add(ArrowGameObject);
-            timer = 0;
+            timer = 0;*/
+            
+            
         }
+    }
+
+    private int FindArrow()
+    {
+        for (int i = 0; i < Arrows.Count; i++)
+        {
+            if (!Arrows[i].activeInHierarchy)
+                return i;
+        }
+
+        return 0;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -58,5 +70,4 @@ public class ArrowTrapScript : MonoBehaviour
             Destroy(this);
         }
     }
-
 }
