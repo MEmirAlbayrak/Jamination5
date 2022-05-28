@@ -7,15 +7,12 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     [SerializeField] float  normalSpeed, nextDash;
     float speed;
-    DungeonManager dm;
   
 
     void Start()
     {
         speed = normalSpeed;
-        dm = GameObject.Find("Dungeon Manager").GetComponent<DungeonManager>();
         rb = gameObject.GetComponent<Rigidbody2D>();
-        transform.position = new Vector3(dm.minX, dm.minY, transform.position.z);
     }
 
     // Update is called once per frame
