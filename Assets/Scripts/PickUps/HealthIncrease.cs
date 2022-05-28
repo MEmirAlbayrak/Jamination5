@@ -23,7 +23,7 @@ public class HealthIncrease : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "") //Player name
+        if (other.gameObject.CompareTag("Player")) //Player name
         {
             Destroy(this);
             //play sound

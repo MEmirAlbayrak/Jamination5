@@ -5,35 +5,24 @@ using UnityEngine;
 
 public class ArrowTrapScript : MonoBehaviour
 {
-    [SerializeField] private CapsuleCollider2D _capsuleCollider2D;
-    [SerializeField] private int damage;
-    [SerializeField] private float speed;
-
-    [SerializeField] private float maxRange;
-
-    //[SerializeField] private int maxArrowCount;
-    //public int arrowCount;
+    [SerializeField] private BoxCollider2D bxCollider;
     [SerializeField] private float fireRate;
-    [SerializeField] private GameObject Arrow;
-    [SerializeField] private GameObject ArrowGameObject;
+    [SerializeField] private Transform firePoint;
     [SerializeField] private List<GameObject> Arrows = new List<GameObject>();
     private Vector2 direction;
     private float timer;
 
     private bool wallHit;
+    //[SerializeField] private float maxRange;
+    //[SerializeField] private int maxArrowCount;
+    //public int arrowCount;
 
-    private void ShootArrow(float speed, float distance, float fireRate)
+
+    private void ShootArrow()
     {
-        timer = Time.deltaTime;
-        if (timer >= fireRate)
-        {
-            /*ArrowGameObject = Instantiate(Arrow, direction, Quaternion.identity);
-            ArrowGameObject.GetComponent<Rigidbody2D>().velocity = (direction * speed);
-            Arrows.Add(ArrowGameObject);
-            timer = 0;*/
-            
-            
-        }
+        timer = 0;
+        Arrows[FindArrow()].transform.position = firePoint.position;
+        Arrows[FindArrow()].GetComponent<ArrowBehaviour>().ActivateProjectile();
     }
 
     private int FindArrow()
@@ -55,19 +44,12 @@ public class ArrowTrapScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.name == "") //Player name
+        timer += Time.deltaTime;
+        if (timer >= fireRate)
         {
-            //Hurt player
-            Destroy(this);
-        }
-
-        else if (other.gameObject.name == "Wall")
-        {
-            Destroy(this);
+            ShootArrow();
         }
     }
+
+    
 }
