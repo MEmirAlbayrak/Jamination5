@@ -30,6 +30,7 @@ public class TrapScript : MonoBehaviour
         {
             trapState = true;
             timer += Time.deltaTime;
+            
             if (timer >= activationTime && trapState)
             {
                 timer = 0;
