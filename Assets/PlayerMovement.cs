@@ -7,10 +7,11 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     [SerializeField] float  normalSpeed, nextDash;
     float speed;
-  
+   [SerializeField] Transform Spriterenderer;  
 
     void Start()
     {
+       
         speed = normalSpeed;
         rb = gameObject.GetComponent<Rigidbody2D>();
     }
@@ -29,12 +30,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetAxisRaw("Horizontal") > .1f)
         {
-            rb.transform.localScale = new Vector3(4f, 4f, 4f);
+          Spriterenderer.localScale = new Vector3(1f, 1f, 1f);
         }
         if (Input.GetAxisRaw("Horizontal") < -.1f)
         {
 
-            rb.transform.localScale = new Vector3(-4f, 4f, 4f);
+            Spriterenderer.localScale = new Vector3(-1f, 1f, 1f);
         }
        
     }
