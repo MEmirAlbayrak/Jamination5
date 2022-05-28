@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class ThrowableAxeScript : MonoBehaviour
 {
-    ShieldCharacterScript scs;
+   PlayerMovement scs;
     void Start()
     {
-        scs = GameObject.FindObjectOfType<ShieldCharacterScript>();
+        scs = GameObject.FindObjectOfType<PlayerMovement>();
     }
 
     
     void Update()
     {
-        if(Vector2.Distance(scs.transform.position,transform.position) >= scs.axeDistance)
+        scs = GameObject.FindObjectOfType<PlayerMovement>();
+        if (Vector2.Distance(scs.transform.position,transform.position) >= scs.particleDistance)
         {
             Destroy(gameObject);
         }
