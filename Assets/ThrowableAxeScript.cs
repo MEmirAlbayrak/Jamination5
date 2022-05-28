@@ -19,4 +19,6 @@ public class ThrowableAxeScript : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+  
 }
