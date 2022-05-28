@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
     [SerializeField] float normalSpeed, nextDash;
-    float speed;
+  public  float speed;
     [SerializeField] Transform Spriterenderer;
     public int bulletCount;
     public int maxBulletCount;
@@ -33,10 +33,22 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] ShieldCharacterScript scs;
     [SerializeField] BowCharacterScript bcs;
     bool playerswitch;
-    bool bowChar, AxeChar;
+  public  bool bowChar, AxeChar;
 
 
     public TrailRenderer charTrail;
+    public GameObject tempHolder,blackHole;
+
+    public bool canReturnToDash;
+    Vector3 curPos;
+
+    GameObject tempHolderGO;
+
+
+   public float countTimer = 0.1f;
+    bool countimerBool;
+
+
     private void Awake()
     {
         bowChar =false;
@@ -46,7 +58,8 @@ public class PlayerMovement : MonoBehaviour
     }
     void Start()
     {
-       
+        
+
         specialAttackTimer = maxSpecialAttackTimer;
 
         speed = normalSpeed;
@@ -77,16 +90,29 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         Movement();
+        AxeDashSkill();
         Dash();
 
     }
     private void Update()
     {
+        Debug.Log(speed);
+        if(countimerBool)
+        {
 
+            countTimer -= Time.deltaTime;
+        }
+        if(countTimer<0f)
+        {
+            canReturnToDash = true;
+            countimerBool = false;
+            countTimer = 0.1f;
+        }
         scs = GetComponent<ShieldCharacterScript>();
         bcs = GetComponent<BowCharacterScript>();
 
-       
+
+
         if (bulletCount == 4 && Input.GetMouseButtonDown(0) && AxeChar)
         {
             Debug.Log("first");
@@ -189,12 +215,22 @@ public class PlayerMovement : MonoBehaviour
     }
     void Dash()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time > nextDash)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time > nextDash )
         {
+
+            Debug.Log("dashhhh");
+            HoldDashPosition();
+            BowDashSkill();
             nextDash = Time.time + 2;
-
-
+            canReturnToDash = true;
+            countimerBool = true;
+            if(AxeChar) { 
             speed *= 10;
+            }
+            else
+            {
+                speed *= 20;
+            }
             rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * speed;
         }
         else
@@ -258,22 +294,57 @@ public class PlayerMovement : MonoBehaviour
 
         }
     }
+
     public void AxeDashSkill()
     {
-        if(AxeChar)
+        if (AxeChar)
         {
-            Vector3 curPos = transform.position;
-            if(Time.time < nextDash)
-            {
-                if(Input.GetKeyDown(KeyCode.LeftShift))
+            if(Input.GetKeyDown(KeyCode.LeftShift))
+            { 
+                if(nextDash >=Time.time && canReturnToDash)
                 {
+
                     transform.position = curPos;
+                    canReturnToDash = false;
+                    tempHolderGO.SetActive(false);
+
+                   
+
+                }
+               
+            }
+            if(nextDash < Time.time)
+            {
+                if(tempHolderGO!=null)
+                {
+                    Destroy(tempHolderGO);
                 }
             }
+
+        }
            
             
             
+        
+    }
+    public void BowDashSkill()
+    {
+        if(bowChar)
+        {
+           
+            tempHolderGO = Instantiate(blackHole, transform.position, Quaternion.identity);
+            curPos = tempHolderGO.transform.position;
         }
+    }
+    public void HoldDashPosition()
+    {
+        if (AxeChar)
+        {
+             tempHolderGO = Instantiate(tempHolder, transform.position, Quaternion.identity);
+           curPos = tempHolderGO.transform.position;
+            
+        }
+
     }
 
 }
