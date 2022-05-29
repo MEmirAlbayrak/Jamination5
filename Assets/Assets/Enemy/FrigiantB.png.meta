@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: ae30aebeac875b445a9e072593052ac6
+guid: 2c5ea2a23e0e91349b5ef090f4e8026e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7008412969330441016
-    second: Attack_0
+      213: 7987753829481289086
+    second: FrigiantB_0
   - first:
-      213: -7763475090823894447
-    second: Attack_1
+      213: 4154560612977971901
+    second: FrigiantB_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,7 +121,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack_0
+      name: FrigiantB_0
       rect:
         serializedVersion: 2
         x: 17
@@ -129,20 +129,20 @@ TextureImporter:
         width: 50
         height: 45
       alignment: 9
-      pivot: {x: 0.5, y: 0.68391824}
+      pivot: {x: 0.49999985, y: 0.6931054}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c481db598d1dbe90800000000000000
-      internalID: -7008412969330441016
+      spriteID: e759f7779c33ade60800000000000000
+      internalID: 7987753829481289086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_1
+      name: FrigiantB_1
       rect:
         serializedVersion: 2
         x: 94
@@ -150,14 +150,14 @@ TextureImporter:
         width: 48
         height: 55
       alignment: 9
-      pivot: {x: 0.5, y: 0.61087894}
+      pivot: {x: 0.5060347, y: 0.6158633}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15a29dc9988924490800000000000000
-      internalID: -7763475090823894447
+      spriteID: db2916e9dd6f7a930800000000000000
+      internalID: 4154560612977971901
       vertices: []
       indices: 
       edges: []
