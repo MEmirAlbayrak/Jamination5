@@ -391,7 +391,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (AxeChar)
         {
-            if (Input.GetKeyDown(KeyCode.LeftShift) && nextDash<Time.time)
+            if (Input.GetKeyDown(KeyCode.LeftShift) && nextDash>Time.time)
             {
                 
                 if ( canReturnToDash)
@@ -399,7 +399,8 @@ public class PlayerMovement : MonoBehaviour
 
                     Debug.Log("aXEDASH");
                     transform.position = curPos;    
-                    countTimer = 1f;
+                    countTimer = 2f;
+                    countimerBool = false;
                     canReturnToDash = false;
                     tempHolderGO.SetActive(false);
 
