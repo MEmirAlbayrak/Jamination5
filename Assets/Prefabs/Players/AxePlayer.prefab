@@ -724,6 +724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c168d398f7809a42bfc7056f7849e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 50
 --- !u!114 &4304921056987162557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -969,6 +970,7 @@ MonoBehaviour:
   playerColorMaxtimer: 0.3
   playerSprite: {fileID: 1751721455}
   HitSound: {fileID: 1884685812}
+  tempSpeed: 0
 --- !u!50 &4304921057165378655
 Rigidbody2D:
   serializedVersion: 4
@@ -1227,6 +1229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c168d398f7809a42bfc7056f7849e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 50
 --- !u!114 &4304921056987162558
 MonoBehaviour:
   m_ObjectHideFlags: 0
