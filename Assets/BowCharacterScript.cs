@@ -17,7 +17,7 @@ public class BowCharacterScript : MonoBehaviour
 
     bool onetime;
 
-    bool wallHit;
+    public bool wallHit;
 
     bool shootBool;
     public float shootTimer;

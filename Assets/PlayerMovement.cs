@@ -54,8 +54,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] PlayerAnimationHandler pah;
 
-
-    [SerializeField] float hp;
+    private bool resetSpeedOnce = false;
+    public float hp;
 
     public float shield;
 
@@ -69,6 +69,8 @@ public class PlayerMovement : MonoBehaviour
     bool playerColorChange;
 
    public SpriteRenderer playerSprite;
+
+  
     private void Awake()
     {
         bowChar = false;
@@ -79,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void Start()
     {
+        
         hp = 100;
         maxspeedTimer = 2f;
         speedTimer = maxspeedTimer;
@@ -286,13 +289,16 @@ public class PlayerMovement : MonoBehaviour
     }
     void Dash()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time > nextDash)
-        {
 
+        
+        if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time > nextDash )
+        {
+           
+            
             Debug.Log("dashhhh");
             HoldDashPosition();
             BowDashSkill();
-            nextDash = Time.time + 2;
+            nextDash = Time.time + 1f;
             canReturnToDash = true;
             countimerBool = true;
             if (AxeChar)
@@ -303,12 +309,16 @@ public class PlayerMovement : MonoBehaviour
             {
                 Movespeed *= 20;
             }
+            resetSpeedOnce = true;
             rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * Movespeed;
+            
         }
-        //else
-        //{
-        //    Movespeed = normalSpeed;
-        //}
+        else if (resetSpeedOnce)
+        {
+            Movespeed = normalSpeed;
+            resetSpeedOnce = false;
+        }
+        
 
 
 
