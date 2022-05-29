@@ -144,9 +144,9 @@ public class EnemyBehavior : MonoBehaviour
     }
 
     public void TakeDamage(float damage){
-
         takeDamageBool = true;
-        Debug.Log(":QWE:QWE");
+        
+       transform.parent.GetComponent<EnemyParent>().TakeDamage(damage);
     }
 
         private void OnDrawGizmosSelected()

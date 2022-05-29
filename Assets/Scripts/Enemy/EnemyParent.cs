@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyParent : MonoBehaviour
 {
+    [SerializeField] private float hp = 100;
     private void Start() {
         ChangeRealm(LevelManager.Instance.currentRealm);
     }
@@ -16,5 +17,18 @@ public class EnemyParent : MonoBehaviour
                 transform.GetChild(i).gameObject.SetActive(false);
             }
         }
+    }
+
+    public void TakeDamage(float damage){
+        hp -= damage;
+
+        if (hp < 0){
+            Die();
+        }
+    }
+
+    private void Die(){
+        EnemySpawner.Instance.EnemyKilled();
+        Destroy(gameObject);
     }
 }

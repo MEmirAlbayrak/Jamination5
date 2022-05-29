@@ -29,7 +29,6 @@ public class ThrowableAxeScript : MonoBehaviour
     {
         if(collision.CompareTag("Enemy"))
         {
-            Debug.Log("axedamage");
             collision.GetComponent<EnemyBehavior>().TakeDamage(damage);
         }
         Destroy(gameObject, 0.1f);

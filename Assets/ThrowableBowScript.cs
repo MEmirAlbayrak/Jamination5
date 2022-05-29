@@ -36,7 +36,6 @@ public class ThrowableBowScript : MonoBehaviour
     {
         if(collision.CompareTag("Enemy"))
         {
-            Debug.Log("bowdamage");
             collision.GetComponent<EnemyBehavior>().TakeDamage(damage);
             
         }
