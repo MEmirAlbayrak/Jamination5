@@ -13177,8 +13177,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1445265468803279543, guid: 624988a18c00bbd4a8a19cd74d0f5dd2, type: 3}
-      propertyPath: waveCounts.Array.data[0]
+      propertyPath: waveCounts.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445265468803279543, guid: 624988a18c00bbd4a8a19cd74d0f5dd2, type: 3}
+      propertyPath: waveCounts.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445265468803279543, guid: 624988a18c00bbd4a8a19cd74d0f5dd2, type: 3}
+      propertyPath: waveCounts.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445265468803279543, guid: 624988a18c00bbd4a8a19cd74d0f5dd2, type: 3}
+      propertyPath: waveCounts.Array.data[2]
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1445265468803279543, guid: 624988a18c00bbd4a8a19cd74d0f5dd2, type: 3}
       propertyPath: realmObjects.Array.data[0]
