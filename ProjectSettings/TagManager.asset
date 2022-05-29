@@ -9,6 +9,7 @@ TagManager:
   - IntroMusic
   - AudioManager
   - LoopMusic
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX

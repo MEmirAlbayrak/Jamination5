@@ -24,10 +24,10 @@ public class ExplodingTrap : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player")) //Player bullet
+        if (other.gameObject.CompareTag("PlayerBullet")) //Player bullet
         {
-            Destroy(this);
             //Play explode animaton, hurt everyone in the radius
+            gameObject.SetActive(false);
         }
             
     }
