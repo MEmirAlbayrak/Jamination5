@@ -25,9 +25,9 @@ public class AudioManager : MonoBehaviour
         IntroMusic = GameObject.FindGameObjectWithTag("IntroMusic").GetComponent<AudioSource>();
         LoopMusic = GameObject.FindGameObjectWithTag("LoopMusic").GetComponent<AudioSource>();
 
-       //LowHpMusic = GameObject.FindGameObjectWithTag("LowHpMusic").GetComponent<AudioSource>();
+        //LowHpMusic = GameObject.FindGameObjectWithTag("LowHpMusic").GetComponent<AudioSource>();
 
-        LowHpMusic.mute = true;
+        //LowHpMusic.mute = true;
 
         if (!IntroMusic.isPlaying)
         {
@@ -38,6 +38,14 @@ public class AudioManager : MonoBehaviour
 
     void Update()
     {
+
+        if(LoopMusic == null)
+        {
+            IntroMusic = GameObject.FindGameObjectWithTag("IntroMusic").GetComponent<AudioSource>();
+            LoopMusic = GameObject.FindGameObjectWithTag("LoopMusic").GetComponent<AudioSource>();
+
+        }
+
         PlayLoopMusic();
         if (LowHpMusic != null)
         {
@@ -55,7 +63,7 @@ public class AudioManager : MonoBehaviour
     {
         if (!IntroMusic.isPlaying)
         {
-            if (!LoopMusic.isPlaying)
+            if (!LoopMusic.isPlaying && LoopMusic != null)
             {
                 Debug.Log("loop");
                 LoopMusic.Play();
@@ -67,7 +75,7 @@ public class AudioManager : MonoBehaviour
     {
         if (!IntroMusic.isPlaying)
         {
-            if (!LowHpMusic.isPlaying)
+            if (!LowHpMusic.isPlaying && LowHpMusic != null)
             {
 
                 LowHpMusic.Play();
