@@ -53,7 +53,7 @@ public class ShieldCharacterScript : MonoBehaviour
   [SerializeField]  float maxShieldGainTimer;
     float shieldgainTimer;
 
-
+    [SerializeField] AudioSource AxeFX;
     void Start()
     {
         shieldgainTimer = maxShieldGainTimer;
@@ -166,7 +166,7 @@ public class ShieldCharacterScript : MonoBehaviour
         AxeGameObject.GetComponent<Rigidbody2D>().velocity = axeTip.up * speed;
         Axes.Add(AxeGameObject);
         pm.bulletCount--;
-
+        AxeFX.PlayOneShot(AxeFX.clip);
 
         shootBool = true;
 

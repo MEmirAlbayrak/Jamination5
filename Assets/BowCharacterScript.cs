@@ -31,6 +31,7 @@ public class BowCharacterScript : MonoBehaviour
     Vector2 diraction;
     float angle;
 
+    [SerializeField] AudioSource BowFx;
     [SerializeField] PlayerAnimationHandler pah;
 
 
@@ -153,6 +154,7 @@ public class BowCharacterScript : MonoBehaviour
         BowGameObject.GetComponent<Rigidbody2D>().velocity = bowTip.up * BowGameObject.GetComponent<ThrowableBowScript>().speed;
         pm.bulletCount--;
         shootBool = true;
+        BowFx.PlayOneShot(BowFx.clip);
 
     }
 
