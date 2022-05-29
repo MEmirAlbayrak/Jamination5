@@ -73,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
   
     private void Awake()
     {
+        hp = 100;
         bowChar = false;
         AxeChar = true;
         scs = GetComponent<ShieldCharacterScript>();
@@ -82,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         
-        hp = 100;
+      
         maxspeedTimer = 2f;
         speedTimer = maxspeedTimer;
         specialAttackTimer = maxSpecialAttackTimer;

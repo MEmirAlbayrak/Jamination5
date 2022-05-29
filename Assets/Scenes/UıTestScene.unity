@@ -2191,6 +2191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AxePlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 4304921057165378654, guid: 352c202fbecf0d84fb01cb692771d4e7, type: 3}
+      propertyPath: hp
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 352c202fbecf0d84fb01cb692771d4e7, type: 3}
 --- !u!1 &1886932423
