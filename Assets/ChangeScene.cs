@@ -19,7 +19,7 @@ public class ChangeScene : MonoBehaviour
 
     public void ChangeSceanePls()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(1);
     }
 
     public void ClickAudio()
