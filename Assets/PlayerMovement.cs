@@ -64,6 +64,11 @@ public class PlayerMovement : MonoBehaviour
     bool speedTimerBool;
 
    public float speedTimer, maxspeedTimer;
+
+    public float playerColorTimer, playerColorMaxtimer;
+    bool playerColorChange;
+
+   public SpriteRenderer playerSprite;
     private void Awake()
     {
         bowChar = false;
@@ -83,6 +88,9 @@ public class PlayerMovement : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody2D>();
         reloadTimer = reloadMaxTimer;
         bulletCount = maxBulletCount;
+
+
+        playerColorTimer = playerColorMaxtimer;
 
         foreach (GameObject axe in RotatingAxes)
         {
@@ -113,6 +121,9 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
+
+
+        TakeDamageColorChange();
         LookToMouse();
         if (Movespeed >= maxSpeed)
         {
@@ -234,6 +245,25 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
+
+    void TakeDamageColorChange()
+    {
+        if(playerColorChange)
+        {
+            playerColorTimer -= Time.deltaTime;
+            playerSprite.color = new Color32(190, 12, 34, 255);
+        }
+        
+        if(playerColorTimer<0)
+        {
+            playerColorTimer = playerColorMaxtimer;
+            playerSprite.color = new Color32(255, 255, 255, 255);
+            playerColorChange = false;
+        }
+        
+
+        
+    }
     void Movement()
     {
 
@@ -252,7 +282,6 @@ public class PlayerMovement : MonoBehaviour
         {
             float nextAngle = (Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg) - 90;
             Spriterenderer.transform.eulerAngles = new Vector3(0, 0, nextAngle);
-            Debug.Log(nextAngle);
         }
     }
     void Dash()
@@ -423,6 +452,7 @@ public class PlayerMovement : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+        playerColorChange = true;
     }
 
 }

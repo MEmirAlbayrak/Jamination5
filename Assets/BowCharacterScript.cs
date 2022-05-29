@@ -131,7 +131,7 @@ public class BowCharacterScript : MonoBehaviour
 
                 BowGameObject.GetComponent<ThrowableBowScript>().destroyBool = false;
                 BowGameObject.GetComponent<ThrowableBowScript>().damage += 10;
-                BowGameObject.GetComponent<ThrowableBowScript>().speed *= 3;
+                BowGameObject.GetComponent<ThrowableBowScript>().speed = 20f;
                 BowGameObject.GetComponent<ThrowableBowScript>().arrowTrail.enabled = true;
                 BowGameObject.GetComponent<ThrowableBowScript>().lifeTime = 30;
                 pm.specialAttackBool = false;
