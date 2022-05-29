@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 417698314}
   - component: {fileID: 417698315}
   - component: {fileID: 4651585309123932736}
+  - component: {fileID: 1835047022}
   m_Layer: 7
   m_Name: Trail
   m_TagString: Untagged
@@ -40,7 +41,7 @@ TrailRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417698313}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -142,6 +143,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 022c0b607bf6fcd42b67b2f0d233b5da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!68 &1835047022
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417698313}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -6.985, y: -0.78}
+  - {x: 0.125, y: -0.78}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1751721453
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,7 +513,7 @@ MonoBehaviour:
   deadzoneMagnitude: 0.75
   normalSpeed: 7
   nextDash: 0
-  speed: 0
+  Movespeed: 0
   Spriterenderer: {fileID: 1751721454}
   bulletCount: 0
   maxBulletCount: 4
@@ -522,6 +545,12 @@ MonoBehaviour:
   pah: {fileID: 7968136013236319204}
   hp: 0
   shield: 0
+  maxSpeed: 13
+  speedTimer: 0
+  maxspeedTimer: 0
+  playerColorTimer: 0
+  playerColorMaxtimer: 0.3
+  playerSprite: {fileID: 1751721455}
 --- !u!50 &4304921057165378655
 Rigidbody2D:
   serializedVersion: 4
@@ -585,7 +614,9 @@ MonoBehaviour:
   shootTimer: 0
   maxShootTimer: 0.5
   shootBool: 0
+  getHit: 0
   pah: {fileID: 7968136013236319204}
+  maxShieldGainTimer: 3
 --- !u!114 &8175122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -600,9 +631,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bow: {fileID: 6317371097102433812, guid: a2687fe8550bbe14f874222b853b66f8, type: 3}
   bowTip: {fileID: 4304921058166617398}
+  maxSpeed: 13
+  moveSpeed: 0
   shootTimer: 0
   maxShootTimer: 0.5
-  bowSpeed: 10
+  bowSpeed: 15
   bowDistance: 15
   arrowList: []
   pah: {fileID: 7968136013236319204}
@@ -840,13 +873,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c06576b50eae6df4683aa6a850c5185e, type: 3}
---- !u!4 &1584789283634405204 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3332781991111990657, guid: c06576b50eae6df4683aa6a850c5185e, type: 3}
-  m_PrefabInstance: {fileID: 4304921058010677973}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1584789283634405206 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3332781991111990659, guid: c06576b50eae6df4683aa6a850c5185e, type: 3}
+  m_PrefabInstance: {fileID: 4304921058010677973}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1584789283634405204 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3332781991111990657, guid: c06576b50eae6df4683aa6a850c5185e, type: 3}
   m_PrefabInstance: {fileID: 4304921058010677973}
   m_PrefabAsset: {fileID: 0}
