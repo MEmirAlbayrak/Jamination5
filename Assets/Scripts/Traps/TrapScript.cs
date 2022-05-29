@@ -8,7 +8,6 @@ public class TrapScript : MonoBehaviour
     [SerializeField] private BoxCollider2D bxcollider;
     [SerializeField] private int damage;
     [SerializeField] private float activationTime;
-    [SerializeField] private float animationTime;
     [SerializeField] private float timer;
     private bool trapState;
 
@@ -17,37 +16,33 @@ public class TrapScript : MonoBehaviour
     void Start()
     {
         trapState = false;
+        timer = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
     }
-
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (other.gameObject.CompareTag("Player")) //Player name
+        Debug.Log("dsadasd");
+        if (col.gameObject.CompareTag("Player")) //Player name
         {
             trapState = true;
             timer += Time.deltaTime;
+            Debug.Log("Yup");
             
             if (timer >= activationTime && trapState)
             {
                 timer = 0;
-                while (true)
-                {
-                    timer += Time.deltaTime;
-                    if (timer >= animationTime && trapState)
-                    {
-                        //Play animation,Hurt player
-                        break;
-                    }
-                }
+                //Play animation,Hurt player
+                Debug.Log("Bruh");
             }
         }
     }
+    
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         trapState = false;
     }
