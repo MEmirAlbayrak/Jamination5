@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     private Camera _cam;
+    [SerializeField] private Texture2D cursor;
     
     [SerializeField] private Transform _lookingPivot;
     [SerializeField] private float deadzoneMagnitude = 0.075f;
@@ -150,7 +151,7 @@ public class PlayerMovement : MonoBehaviour
         if(nextDash>Time.time)
         {
 
-            Debug.Log("büyüðk");
+            Debug.Log("bï¿½yï¿½ï¿½k");
         }
 
         TakeDamageColorChange();
@@ -244,7 +245,7 @@ public class PlayerMovement : MonoBehaviour
             if (playerswitch)
             {
                 pah.AnimationState("BowIdleAnim");
-
+                LevelManager.Instance.ChangeRealms(1);
                 charTrail.enabled = true;
                 bcs.enabled = true;
                 maxBulletCount = 7;
@@ -262,7 +263,7 @@ public class PlayerMovement : MonoBehaviour
             if (playerswitch)
             {
                 pah.AnimationState("AxeIdleAnim");
-
+                LevelManager.Instance.ChangeRealms(0);
                 charTrail.enabled = false;
                 scs.shootBool = false;
                 scs.enabled = true;

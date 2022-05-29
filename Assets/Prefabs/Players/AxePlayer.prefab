@@ -779,7 +779,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.11320752, g: 0.11267352, b: 0.11267352, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -927,6 +927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fe9c283312e2ef40a81274846a66586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursor: {fileID: 2800000, guid: e9a203e96026a454ba87a6b70b469049, type: 3}
   _lookingPivot: {fileID: 4304921058166617398}
   deadzoneMagnitude: 0.75
   normalSpeed: 7

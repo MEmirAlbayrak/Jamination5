@@ -24,14 +24,13 @@ public class LevelManager : MonoBehaviour
     }
     void Start()
     {
-        currentRealm--;
-        ChangeRealms();
+        ChangeRealms(0);
 
         EnemySpawner.Instance.SendSpawnCommand(waveCounts[0]);
     }
 
-    public void ChangeRealms(){
-        currentRealm++;
+    public void ChangeRealms(int realm){
+        currentRealm = realm;
         realmObjects.ForEach(realmObject => (realmObject as IRealm)?.ChangeRealm(currentRealm));
     }
 
