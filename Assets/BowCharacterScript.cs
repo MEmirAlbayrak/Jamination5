@@ -108,12 +108,12 @@ public class BowCharacterScript : MonoBehaviour
     {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
-        if (pm.Movespeed <= maxSpeed && !wallHit)
+        if (pm.tempSpeed <= maxSpeed && !wallHit)
         {
 
             float plusShield = Mathf.Abs(v + h)/100 ;
 
-            pm.Movespeed += plusShield;
+            pm.tempSpeed += plusShield;
         }
 
     }

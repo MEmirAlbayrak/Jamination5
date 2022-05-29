@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform _lookingPivot;
     [SerializeField] private float deadzoneMagnitude = 0.075f;
     Rigidbody2D rb;
-    [SerializeField] float normalSpeed, nextDash;
+   public float normalSpeed, nextDash;
     public float Movespeed;
     [SerializeField] Transform Spriterenderer;
     public int bulletCount;
@@ -73,7 +73,10 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource HitSound;
 
     public float tempSpeed;
-  
+
+
+    public float resetDashTimer, resetDashtimermax;
+    bool resetDash;
     private void Awake()
     {
         hp = 100;
@@ -85,7 +88,8 @@ public class PlayerMovement : MonoBehaviour
     }
     void Start()
     {
-
+        resetDashtimermax = 0.08f;
+        resetDashTimer = resetDashtimermax;
         tempSpeed = 1;
         maxspeedTimer = 2f;
         speedTimer = maxspeedTimer;
@@ -126,7 +130,22 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
+
+        if(resetDash)
+        {
+            resetDashTimer -= Time.deltaTime;
+        }
+        if(resetDashTimer <0)
+        {
+            resetDash = false;
+            tempSpeed = 1;
+            resetDashTimer = resetDashtimermax;
+        }
+        else
+        {
         Dash();
+
+        }
         AxeDashSkill();
         if(nextDash>Time.time)
         {
@@ -144,7 +163,7 @@ public class PlayerMovement : MonoBehaviour
         if (speedTimer <= 0)
         {
 
-            Movespeed = 7f;
+            tempSpeed = 1;
             speedTimer = maxspeedTimer;
             speedTimerBool = false;
         }
@@ -315,13 +334,14 @@ public class PlayerMovement : MonoBehaviour
             countimerBool = true;
             if (AxeChar)
             {
-                tempSpeed = 20f;
+                tempSpeed = 10f;
                 
             }
             else
             {
-                tempSpeed = 30f; 
+                tempSpeed = 10f; 
             }
+            resetDash = true;
             resetSpeedOnce = true;
             ;
             
@@ -329,7 +349,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (resetSpeedOnce)
         {
-            tempSpeed = 1;
+            
             resetSpeedOnce = false;
         }
         

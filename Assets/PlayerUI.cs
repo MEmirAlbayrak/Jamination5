@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 public class PlayerUI : MonoBehaviour
 {
-    public Slider HpSlider, ShieldSlider;
+    public Slider HpSlider, ShieldSlider,DashSlider;
     PlayerMovement PlayerValues;
 
     public GameObject AxeImage, BowImage;
@@ -24,7 +24,20 @@ public class PlayerUI : MonoBehaviour
     {
         HpSlider.value = PlayerValues.hp;
         ShieldSlider.value = PlayerValues.shield;
+        if(PlayerValues.nextDash > Time.time)
+        {
+            DashSlider.maxValue = PlayerValues.nextDash;
+            
+        DashSlider.value = Time.time;
+        }
+        else
+        { if(DashSlider.minValue < DashSlider.maxValue)
+            {
 
+            DashSlider.minValue = Time.time;
+              
+            }
+        }
         if(PlayerValues.AxeChar)
         {
             AxeImage.SetActive(true);
