@@ -14,6 +14,7 @@ public class EnemySpawner : MonoBehaviour, IRealm
     private static EnemySpawner es;
     [SerializeField] private float playerSpawnerDistance = 20f; 
     public static EnemySpawner Instance => es;
+    private int leftEnemyCount;
     
     private void Awake() {
         if (es == null)
@@ -77,7 +78,16 @@ public class EnemySpawner : MonoBehaviour, IRealm
     public void SendSpawnCommand(int enemySpawnNumber)
     {
         _enemySpawnNumber += enemySpawnNumber;
+        leftEnemyCount += enemySpawnNumber;
         _canSpawn = true;
+    }
+
+    public void EnemyKilled(){
+        leftEnemyCount -= 1;
+
+        if (leftEnemyCount == 0){
+            LevelManager.Instance.WaveFinished();
+        }
     }
 
     private void OnDrawGizmosSelected()

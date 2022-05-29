@@ -34,6 +34,23 @@ public class LevelManager : MonoBehaviour
         currentRealm++;
         realmObjects.ForEach(realmObject => (realmObject as IRealm)?.ChangeRealm(currentRealm));
     }
+
+    public void WaveFinished(){
+        wave++;
+
+        if (wave == waveCounts.Count){
+            Debug.Log("finished!");
+            LevelFinished();
+            return;
+        }
+
+        Debug.Log("Send new wave");
+        EnemySpawner.Instance.SendSpawnCommand(waveCounts[wave]);
+    }
+
+    private void LevelFinished(){
+
+    }
 }
 
 public interface IRealm{
