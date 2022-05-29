@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd12f066-83c7-4fb9-89b5-10946de0d03a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jamination5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jamination5/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/LevelOne/Level11.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/LevelOne/Level11.unity" afterDir="false" />
-    </list>
+    <list default="true" id="dd12f066-83c7-4fb9-89b5-10946de0d03a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +80,7 @@
       <workItem from="1653751185478" duration="619000" />
       <workItem from="1653772065849" duration="1025000" />
       <workItem from="1653773652208" duration="11086000" />
-      <workItem from="1653818932626" duration="4430000" />
+      <workItem from="1653818932626" duration="4514000" />
     </task>
     <servers />
   </component>
