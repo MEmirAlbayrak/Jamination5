@@ -9,10 +9,7 @@ public class ArrowTrapScript : MonoBehaviour
     [SerializeField] private float fireRate;
     [SerializeField] private Transform firePoint;
     [SerializeField] private List<GameObject> Arrows = new List<GameObject>();
-    private Vector2 direction;
     private float timer;
-
-    private bool wallHit;
     //[SerializeField] private float maxRange;
     //[SerializeField] private int maxArrowCount;
     //public int arrowCount;

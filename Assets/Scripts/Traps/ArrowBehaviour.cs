@@ -7,10 +7,11 @@ public class ArrowBehaviour : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private int damage;
-    
+
     public void ActivateProjectile()
     {
         gameObject.SetActive(true);
+        transform.rotation = gameObject.GetComponentInParent<Transform>().rotation;
     }
 
     private void Update()
@@ -35,6 +36,5 @@ public class ArrowBehaviour : MonoBehaviour
             //other.gameObject.GetComponent<EnemyBehavior>().health -= damage;
             Destroy(this);
         }
-        
     }
 }
