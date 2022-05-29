@@ -11,6 +11,8 @@ public class PlayerUI : MonoBehaviour
     public GameObject AxeImage, BowImage;
 
     public TextMeshProUGUI AmmoText;
+
+    public GameObject AxeCharImage, BowCharImage;
     
     void Start()
     {
@@ -27,12 +29,18 @@ public class PlayerUI : MonoBehaviour
         {
             AxeImage.SetActive(true);
             BowImage.SetActive(false);
+            AxeCharImage.SetActive(true);
+            BowCharImage.SetActive(false);
+
         }
         else
         {
+            BowCharImage.SetActive(true);
+            AxeCharImage.SetActive(false);
             AxeImage.SetActive(false);
             BowImage.SetActive(true);
         }
+
 
         AmmoText.text = PlayerValues.bulletCount + "/" + PlayerValues.maxBulletCount;
 

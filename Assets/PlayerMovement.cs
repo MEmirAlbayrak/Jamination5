@@ -70,6 +70,8 @@ public class PlayerMovement : MonoBehaviour
 
    public SpriteRenderer playerSprite;
 
+    public AudioSource HitSound;
+
   
     private void Awake()
     {
@@ -119,11 +121,11 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         Movement();
-        Dash();
 
     }
     private void Update()
     {
+        Dash();
         AxeDashSkill();
         if(nextDash>Time.time)
         {
@@ -309,20 +311,20 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("dashhhh");
             HoldDashPosition();
             BowDashSkill();
-            nextDash = Time.time + 2f;
             
             countimerBool = true;
             if (AxeChar)
             {
-                Movespeed *= 10;
+                Movespeed = 150;
             }
             else
             {
-                Movespeed *= 20;
+                Movespeed = 200;
             }
             resetSpeedOnce = true;
             rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * Movespeed;
             
+            nextDash = Time.time + 2f;
         }
         else if (resetSpeedOnce)
         {
@@ -470,7 +472,10 @@ public class PlayerMovement : MonoBehaviour
             speedTimerBool = false;
             speedTimer = maxspeedTimer;
         }
-        
+        if(!HitSound.isPlaying)
+        {
+            HitSound.PlayOneShot(HitSound.clip);
+        }
         hp -= overDamage;
 
         if (hp < 0)
