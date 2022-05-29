@@ -13,7 +13,7 @@ public class PlayerUI : MonoBehaviour
     public TextMeshProUGUI AmmoText;
 
     public GameObject AxeCharImage, BowCharImage;
-    public GameObject ESCmenu;
+ 
     
     void Start()
     {
