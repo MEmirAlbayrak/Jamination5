@@ -971,6 +971,8 @@ MonoBehaviour:
   playerSprite: {fileID: 1751721455}
   HitSound: {fileID: 1884685812}
   tempSpeed: 0
+  resetDashTimer: 0
+  resetDashtimermax: 0
 --- !u!50 &4304921057165378655
 Rigidbody2D:
   serializedVersion: 4
@@ -1052,7 +1054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bow: {fileID: 6317371097102433812, guid: a2687fe8550bbe14f874222b853b66f8, type: 3}
   bowTip: {fileID: 4304921058166617398}
-  maxSpeed: 13
+  maxSpeed: 4
   moveSpeed: 0
   wallHit: 0
   shootTimer: 0
