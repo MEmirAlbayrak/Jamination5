@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class EnemyBehavior : MonoBehaviour
 {
     private PlayerMovement _player;
-    private NavMeshAgent _agent;
+    public NavMeshAgent _agent;
     private Rigidbody2D _rigidbody;
     private Animator _animator;
     [SerializeField] private float attackRange = 0.75f;
@@ -31,6 +31,12 @@ public class EnemyBehavior : MonoBehaviour
 
     bool takeDamageBool;
     float colorChangeTimer, maxColorChangeTimer;
+    private void Awake() {
+                _agent = GetComponent<NavMeshAgent>();
+		_agent.updateRotation = false;
+		_agent.updateUpAxis = false;
+     _agent.updatePosition = false;
+    }
     void Start()
     {
 
@@ -41,10 +47,7 @@ public class EnemyBehavior : MonoBehaviour
         _animator = GetComponent<Animator>();
         _rigidbody = GetComponent<Rigidbody2D>();
 
-        _agent = GetComponent<NavMeshAgent>();
-		_agent.updateRotation = false;
-		_agent.updateUpAxis = false;
-     _agent.updatePosition = false;
+
     }
 
     // Update is called once per frame

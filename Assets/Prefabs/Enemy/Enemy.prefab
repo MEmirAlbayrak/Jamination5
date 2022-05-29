@@ -326,6 +326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77e4c64c96f99684bb519737ffbef26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _agent: {fileID: 0}
   attackRange: 0.75
   attackPoint: {fileID: 7473564685672115868}
   angleOffset: 82
@@ -626,6 +627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77e4c64c96f99684bb519737ffbef26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _agent: {fileID: 0}
   attackRange: 0.75
   attackPoint: {fileID: 7473564685188537189}
   angleOffset: 82
@@ -717,7 +719,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7473564687126981410}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

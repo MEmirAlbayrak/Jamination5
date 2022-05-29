@@ -27,13 +27,17 @@ public class EnemyParent : MonoBehaviour
         }
     }
     public void ChangeRealm(int realm){
-        for (int i = 0, length = transform.childCount; i < length; i++){
-            if (i == realm){
-                transform.GetChild(i).gameObject.SetActive(true);
-            }
-            else {
-                transform.GetChild(i).gameObject.SetActive(false);
-            }
+        if (realm == 0){
+            transform.GetChild(0).gameObject.SetActive(true);
+            transform.GetChild(1).gameObject.SetActive(false);
+            transform.GetChild(0).transform.position = transform.GetChild(1).transform.position;
+            transform.GetChild(0).GetComponent<EnemyBehavior>()._agent.SetDestination(transform.GetChild(0).transform.position);
+        }
+            else if (realm == 1){
+            transform.GetChild(1).gameObject.SetActive(true);
+            transform.GetChild(0).gameObject.SetActive(false);
+            transform.GetChild(1).transform.position = transform.GetChild(0).transform.position;
+            transform.GetChild(1).GetComponent<EnemyBehavior>()._agent.SetDestination(transform.GetChild(1).transform.position);
         }
     }
 
