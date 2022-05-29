@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Object = System.Object;
 
 public class ArrowBehaviour : MonoBehaviour
 {
@@ -20,21 +21,29 @@ public class ArrowBehaviour : MonoBehaviour
         transform.Translate(movementSpeed, 0, 0);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Wall"))
         {
-            Destroy(this);
+            Debug.Log("Hit Wall.");
+            //Destroy(gameObject);
+            gameObject.SetActive(false);    // deactivate on hit
+            
         }
         else if (other.gameObject.CompareTag("Player"))
         {
+            Debug.Log("Hit PLayer.");
             //other.gameObject.GetComponent<>().health -= damage;
-            Destroy(this);
+            //Destroy(gameObject);
+            gameObject.SetActive(false);    // deactivate on hit
+            
         }
         else if (other.gameObject.CompareTag("Enemy"))
         {
+            Debug.Log("Hit Enemy.");
             //other.gameObject.GetComponent<EnemyBehavior>().health -= damage;
-            Destroy(this);
+            //Destroy(gameObject);
+            gameObject.SetActive(false);    // deactivate on hit
         }
     }
 }
