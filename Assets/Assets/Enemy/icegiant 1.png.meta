@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: ae30aebeac875b445a9e072593052ac6
+guid: 1e23df465694cd348a2db9616664d4b3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7008412969330441016
-    second: Attack_0
+      213: -6843554350538818894
+    second: icegiant 1_0
   - first:
-      213: -7763475090823894447
-    second: Attack_1
+      213: 258213362047661007
+    second: icegiant 1_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,43 +121,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack_0
+      name: icegiant 1_0
       rect:
         serializedVersion: 2
         x: 17
         y: 194
         width: 50
         height: 45
-      alignment: 9
-      pivot: {x: 0.5, y: 0.68391824}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c481db598d1dbe90800000000000000
-      internalID: -7008412969330441016
+      spriteID: 2bafd0fa39fc601a0800000000000000
+      internalID: -6843554350538818894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_1
+      name: icegiant 1_1
       rect:
         serializedVersion: 2
         x: 94
         y: 180
         width: 48
         height: 55
-      alignment: 9
-      pivot: {x: 0.5, y: 0.61087894}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15a29dc9988924490800000000000000
-      internalID: -7763475090823894447
+      spriteID: fc33c194fab559300800000000000000
+      internalID: 258213362047661007
       vertices: []
       indices: 
       edges: []
