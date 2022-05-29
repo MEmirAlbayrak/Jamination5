@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
     GameObject tempHolderGO;
 
 
-    public float countTimer = 0.1f;
+    public float countTimer = 0.2f;
     bool countimerBool;
 
     [SerializeField] PlayerAnimationHandler pah;
@@ -118,13 +118,17 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         Movement();
-        AxeDashSkill();
         Dash();
 
     }
     private void Update()
     {
+        AxeDashSkill();
+        if(nextDash>Time.time)
+        {
 
+            Debug.Log("büyüðk");
+        }
 
         TakeDamageColorChange();
         LookToMouse();
@@ -150,11 +154,17 @@ public class PlayerMovement : MonoBehaviour
 
             countTimer -= Time.deltaTime;
         }
-        if (countTimer < 0f)
+        if (countTimer < 2f && countTimer>=0)
         {
             canReturnToDash = true;
+            
+            
+        }
+        else
+        {
+            canReturnToDash = false;
             countimerBool = false;
-            countTimer = 0.1f;
+            countTimer = 2f;
         }
         scs = GetComponent<ShieldCharacterScript>();
         bcs = GetComponent<BowCharacterScript>();
@@ -298,8 +308,8 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("dashhhh");
             HoldDashPosition();
             BowDashSkill();
-            nextDash = Time.time + 1f;
-            canReturnToDash = true;
+            nextDash = Time.time + 2f;
+            
             countimerBool = true;
             if (AxeChar)
             {
@@ -381,12 +391,15 @@ public class PlayerMovement : MonoBehaviour
     {
         if (AxeChar)
         {
-            if (Input.GetKeyDown(KeyCode.LeftShift))
+            if (Input.GetKeyDown(KeyCode.LeftShift) && nextDash<Time.time)
             {
-                if (nextDash >= Time.time && canReturnToDash)
+                
+                if ( canReturnToDash)
                 {
 
-                    transform.position = curPos;
+                    Debug.Log("aXEDASH");
+                    transform.position = curPos;    
+                    countTimer = 1f;
                     canReturnToDash = false;
                     tempHolderGO.SetActive(false);
 
