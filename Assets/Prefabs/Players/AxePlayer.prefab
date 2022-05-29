@@ -832,7 +832,7 @@ MonoBehaviour:
   canReturnToDash: 0
   countTimer: 2
   pah: {fileID: 7968136013236319204}
-  hp: 0
+  hp: 100
   shield: 0
   maxSpeed: 13
   speedTimer: 0
