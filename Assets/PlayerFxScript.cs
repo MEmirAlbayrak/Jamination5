@@ -23,7 +23,7 @@ public class PlayerFxScript : MonoBehaviour
         if(pm.hp >30)
         {
             musicPlayed = false;
-        }
+        }   
     }
 
     void PlayFX()

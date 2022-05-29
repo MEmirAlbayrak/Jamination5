@@ -963,7 +963,7 @@ MonoBehaviour:
   pah: {fileID: 7968136013236319204}
   hp: 100
   shield: 0
-  maxSpeed: 13
+  maxSpeed: 4
   speedTimer: 0
   maxspeedTimer: 0
   playerColorTimer: 0

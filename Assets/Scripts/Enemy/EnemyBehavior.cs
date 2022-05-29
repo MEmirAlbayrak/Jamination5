@@ -24,7 +24,7 @@ public class EnemyBehavior : MonoBehaviour
     private float attackCurrentDuration = 0f;
     private float attackCurrentCooldown = 0;
     private bool isAttacking = false;
-
+    public AudioSource ShootFx;
     public SpriteRenderer colorChangeObject;
 
 
@@ -72,7 +72,10 @@ public class EnemyBehavior : MonoBehaviour
 
     private void Attack(){
         attackCurrentDuration += Time.fixedDeltaTime;
-
+        if(!ShootFx.isPlaying)
+        {
+            ShootFx.PlayOneShot(ShootFx.clip);      
+        }
         if (currentAttackCount < attackCount){
             if (attackCurrentDuration > attackDuration){
                 currentAttackCount++;
@@ -105,6 +108,8 @@ public class EnemyBehavior : MonoBehaviour
         }
     }
     private void SpawnBullet(){
+
+
         Vector3 bulletRotationVector = new Vector3(attackPoint.rotation.eulerAngles.x, attackPoint.rotation.eulerAngles.y, attackPoint.rotation.eulerAngles.z - 90);
         Quaternion bulletRot = Quaternion.Euler(bulletRotationVector);
 

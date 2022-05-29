@@ -13,6 +13,7 @@ public class PlayerUI : MonoBehaviour
     public TextMeshProUGUI AmmoText;
 
     public GameObject AxeCharImage, BowCharImage;
+    public GameObject ESCmenu;
     
     void Start()
     {
@@ -22,6 +23,8 @@ public class PlayerUI : MonoBehaviour
     
     void Update()
     {
+
+       
         HpSlider.value = PlayerValues.hp;
         ShieldSlider.value = PlayerValues.shield;
         if(PlayerValues.nextDash > Time.time)
