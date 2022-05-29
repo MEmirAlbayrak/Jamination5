@@ -24,10 +24,20 @@ public class EnemyBehavior : MonoBehaviour
     private float attackCurrentDuration = 0f;
     private float attackCurrentCooldown = 0;
     private bool isAttacking = false;
+
+    public SpriteRenderer colorChangeObject;
+
+
+
+    bool takeDamageBool;
+    float colorChangeTimer, maxColorChangeTimer;
     void Start()
     {
-        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
 
+        colorChangeObject = gameObject.GetComponent<SpriteRenderer>();
+        maxColorChangeTimer = 0.3f;
+        colorChangeTimer = maxColorChangeTimer;
+        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         _animator = GetComponent<Animator>();
         _rigidbody = GetComponent<Rigidbody2D>();
 
@@ -55,6 +65,10 @@ public class EnemyBehavior : MonoBehaviour
             StartAttack();
         }
     }
+    private void Update()
+    {
+        ColorChange();
+    }
 
     private void Attack(){
         attackCurrentDuration += Time.fixedDeltaTime;
@@ -75,6 +89,21 @@ public class EnemyBehavior : MonoBehaviour
         }
     }
 
+    void ColorChange()
+    {
+        if(takeDamageBool)
+        {
+            colorChangeObject.color = new Color32(160, 160, 160, 255);
+            colorChangeTimer -= Time.deltaTime;
+
+        }
+        if(colorChangeTimer<0)
+        {
+            colorChangeObject.color = new Color32(255, 255, 255, 255);
+            colorChangeTimer = maxColorChangeTimer;
+            takeDamageBool = false;
+        }
+    }
     private void SpawnBullet(){
         Vector3 bulletRotationVector = new Vector3(attackPoint.rotation.eulerAngles.x, attackPoint.rotation.eulerAngles.y, attackPoint.rotation.eulerAngles.z - 90);
         Quaternion bulletRot = Quaternion.Euler(bulletRotationVector);
@@ -115,7 +144,9 @@ public class EnemyBehavior : MonoBehaviour
     }
 
     public void TakeDamage(float damage){
-        
+
+        takeDamageBool = true;
+        Debug.Log(":QWE:QWE");
     }
 
         private void OnDrawGizmosSelected()
