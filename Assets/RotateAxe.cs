@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RotateAxe : MonoBehaviour
 {
+    [SerializeField] float speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +14,7 @@ public class RotateAxe : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Rotate(Vector3.forward * 50);
+        transform.Rotate(Vector3.forward * speed);
 
     }
 }

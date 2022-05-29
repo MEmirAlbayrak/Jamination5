@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject tempHolder, blackHole;
 
     public bool canReturnToDash;
-    Vector3 curPos;
+    Vector3 curPos,curblacHolePos;
 
     GameObject tempHolderGO;
 
@@ -72,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
 
     public AudioSource HitSound;
 
+    public float tempSpeed;
   
     private void Awake()
     {
@@ -84,8 +85,8 @@ public class PlayerMovement : MonoBehaviour
     }
     void Start()
     {
-        
-      
+
+        tempSpeed = 1;
         maxspeedTimer = 2f;
         speedTimer = maxspeedTimer;
         specialAttackTimer = maxSpecialAttackTimer;
@@ -283,7 +284,7 @@ public class PlayerMovement : MonoBehaviour
     void Movement()
     {
 
-        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * Movespeed;
+        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * Movespeed*tempSpeed;
 
      
 
@@ -311,24 +312,24 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("dashhhh");
             HoldDashPosition();
             BowDashSkill();
-            
             countimerBool = true;
             if (AxeChar)
             {
-                Movespeed = 150;
+                tempSpeed = 20f;
+                
             }
             else
             {
-                Movespeed = 200;
+                tempSpeed = 30f; 
             }
             resetSpeedOnce = true;
-            rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * Movespeed;
+            ;
             
             nextDash = Time.time + 2f;
         }
         else if (resetSpeedOnce)
         {
-            Movespeed = normalSpeed;
+            tempSpeed = 1;
             resetSpeedOnce = false;
         }
         
@@ -432,7 +433,7 @@ public class PlayerMovement : MonoBehaviour
         {
 
             tempHolderGO = Instantiate(blackHole, transform.position, Quaternion.identity);
-            curPos = tempHolderGO.transform.position;
+            curblacHolePos = tempHolderGO.transform.position;
         }
     }
     public void HoldDashPosition()

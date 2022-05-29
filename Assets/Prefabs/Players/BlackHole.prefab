@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8784838746686735805}
   - component: {fileID: -3571014551605982514}
   - component: {fileID: 8023280758128893661}
+  - component: {fileID: -8900037838896904488}
   m_Layer: 0
   m_Name: BlackHole
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 9078266647231001390}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 14.457111, y: 4.2589455, z: -0.8744817}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 0.34586, y: 0.34586, z: 1.38344}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.066037714, g: 0.010902451, b: 0.010902451, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 6a202188227d05b4d86ff0f25e4b27d5, type: 3}
+  m_Color: {r: 0.46226418, g: 0.385947, b: 0.385947, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -111,9 +112,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0022925378, y: 0}
+  m_Offset: {x: -0.0022924333, y: -0.2951259}
   serializedVersion: 2
-  m_Radius: 0.2240487
+  m_Radius: 3.7813554
 --- !u!50 &8023280758128893661
 Rigidbody2D:
   serializedVersion: 4
@@ -135,3 +136,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-8900037838896904488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9078266647231001390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c168d398f7809a42bfc7056f7849e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10

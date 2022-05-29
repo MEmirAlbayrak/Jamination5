@@ -2220,6 +2220,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 249255031, guid: 352c202fbecf0d84fb01cb692771d4e7, type: 3}
+      propertyPath: speed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 933365095, guid: 352c202fbecf0d84fb01cb692771d4e7, type: 3}
+      propertyPath: speed
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 4304921057165378648, guid: 352c202fbecf0d84fb01cb692771d4e7, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2268,17 +2276,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: AxePlayer
       objectReference: {fileID: 0}
-    - target: {fileID: 4304921057165378654, guid: 352c202fbecf0d84fb01cb692771d4e7, type: 3}
-      propertyPath: HitSound
-      value: 
-      objectReference: {fileID: 1884685812}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 352c202fbecf0d84fb01cb692771d4e7, type: 3}
---- !u!82 &1884685812 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 1884685812, guid: 352c202fbecf0d84fb01cb692771d4e7, type: 3}
-  m_PrefabInstance: {fileID: 1869296766}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1886932423
 GameObject:
   m_ObjectHideFlags: 0
