@@ -4,9 +4,27 @@ using UnityEngine;
 
 public class EnemyParent : MonoBehaviour
 {
+    [SerializeField] private GameObject pentagram;
     [SerializeField] private float hp = 100;
+    private GameObject newPentagram;
+    private float pentagramAnimationCurrentTime = 0;
+    private bool doesBorn = false;
+    [SerializeField] private float pentagramAnimationDuration = 1;
     private void Start() {
-        ChangeRealm(LevelManager.Instance.currentRealm);
+        newPentagram = Instantiate(pentagram, transform.position, Quaternion.identity);
+    }
+
+    private void Update() {
+        if (!doesBorn){
+            pentagramAnimationCurrentTime += Time.deltaTime;
+
+            if (pentagramAnimationCurrentTime > pentagramAnimationDuration){
+                Destroy(newPentagram.gameObject);
+                transform.eulerAngles = Vector3.zero;
+                ChangeRealm(LevelManager.Instance.currentRealm);
+                doesBorn = true;
+            }
+        }
     }
     public void ChangeRealm(int realm){
         for (int i = 0, length = transform.childCount; i < length; i++){

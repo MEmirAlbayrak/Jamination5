@@ -21,7 +21,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7473564685032367930
 Transform:
   m_ObjectHideFlags: 0
@@ -75,10 +75,10 @@ MonoBehaviour:
   attackPoint: {fileID: 7473564685672115868}
   angleOffset: 82
   minDistance: 10
-  attackCooldown: 2
-  attackDuration: 0.05
+  attackCooldown: 1.2
+  attackDuration: 0.2
   bulletPrefab: {fileID: 9042158081357060225, guid: a28d32930c019e048968ec56cab3a60f, type: 3}
-  attackCount: 30
+  attackCount: 5
   bulletPosX: 0.25
   bulletPosY: 0.25
   hp: 200
@@ -235,7 +235,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95e43c2aadbaa2c419416b6716f4eb21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pentagram: {fileID: 8439423087484616149, guid: 6e8a5d1628788f144a9ca84eaa49385f, type: 3}
   hp: 100
+  pentagramAnimationDuration: 1
 --- !u!1 &7473564685188537188
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,10 +373,10 @@ MonoBehaviour:
   attackPoint: {fileID: 7473564685188537189}
   angleOffset: 82
   minDistance: 10
-  attackCooldown: 2
-  attackDuration: 0.05
+  attackCooldown: 1.2
+  attackDuration: 0.2
   bulletPrefab: {fileID: 9042158081357060225, guid: 9c23af32c5a607e4ea475e3630955f44, type: 3}
-  attackCount: 30
+  attackCount: 5
   bulletPosX: 0.25
   bulletPosY: 0.25
   hp: 200

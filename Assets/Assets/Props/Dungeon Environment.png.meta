@@ -4,13 +4,13 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 7309608371789821163
-    second: Dungeon Environment_0
+    second: torch1
   - first:
       213: 676909397967392706
-    second: Dungeon Environment_1
+    second: torch2
   - first:
       213: -3065736195096863177
-    second: Dungeon Environment_2
+    second: torch3
   - first:
       213: -930503560144220106
     second: Dungeon Environment_3
@@ -73,16 +73,16 @@ TextureImporter:
     second: Dungeon Environment_22
   - first:
       213: 6806346148949451973
-    second: Dungeon Environment_23
+    second: banner11
   - first:
       213: -8923126039505879642
-    second: Dungeon Environment_24
+    second: banner21
   - first:
       213: -3526916986631464518
-    second: Dungeon Environment_25
+    second: banner31
   - first:
       213: -4629772371480126135
-    second: Dungeon Environment_26
+    second: banner41
   - first:
       213: 4356524862435560697
     second: Dungeon Environment_27
@@ -124,16 +124,16 @@ TextureImporter:
     second: Dungeon Environment_39
   - first:
       213: 6765994950403204949
-    second: Dungeon Environment_40
+    second: banner12
   - first:
       213: -2885169892740086865
-    second: Dungeon Environment_41
+    second: banner22
   - first:
       213: 9080064695315010840
-    second: Dungeon Environment_42
+    second: banner32
   - first:
       213: -8034559868863886781
-    second: Dungeon Environment_43
+    second: banner42
   - first:
       213: -4509455830832792649
     second: Dungeon Environment_44
@@ -448,16 +448,16 @@ TextureImporter:
     second: Dungeon Environment_147
   - first:
       213: 6311992849474666249
-    second: Dungeon Environment_148
+    second: Spike1
   - first:
       213: 1142047153963269696
-    second: Dungeon Environment_149
+    second: Spike2
   - first:
       213: 4472356931329562427
-    second: Dungeon Environment_150
+    second: Spike3
   - first:
       213: -7110794116686558220
-    second: Dungeon Environment_151
+    second: Spike4
   - first:
       213: -3409542704475954812
     second: Dungeon Environment_152
@@ -886,7 +886,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon Environment_23
+      name: banner11
       rect:
         serializedVersion: 2
         x: 240
@@ -907,7 +907,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon Environment_24
+      name: banner21
       rect:
         serializedVersion: 2
         x: 256
@@ -928,7 +928,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon Environment_25
+      name: banner31
       rect:
         serializedVersion: 2
         x: 272
@@ -949,7 +949,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon Environment_26
+      name: banner41
       rect:
         serializedVersion: 2
         x: 288
@@ -1159,7 +1159,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon Environment_40
+      name: banner12
       rect:
         serializedVersion: 2
         x: 240
@@ -1180,7 +1180,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon Environment_41
+      name: banner22
       rect:
         serializedVersion: 2
         x: 256
@@ -1201,7 +1201,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon Environment_42
+      name: banner32
       rect:
         serializedVersion: 2
         x: 272
@@ -1222,7 +1222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon Environment_43
+      name: banner42
       rect:
         serializedVersion: 2
         x: 288
@@ -1385,132 +1385,6 @@ TextureImporter:
       bones: []
       spriteID: b867c9bb264058260800000000000000
       internalID: 7099085209720354443
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dungeon Environment_56
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 946210ba52dac60d0800000000000000
-      internalID: -3428174839041415607
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dungeon Environment_57
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96d5d13221e6a22c0800000000000000
-      internalID: -4455627857152090775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dungeon Environment_58
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ae775a80f5603900800000000000000
-      internalID: 662141229011009184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dungeon Environment_67
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6ecdbdd084f2f4a0800000000000000
-      internalID: -6560912872812196242
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dungeon Environment_68
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e669f36101b833190800000000000000
-      internalID: -7983884813188753810
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dungeon Environment_69
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b570b5a9b6a2cf960800000000000000
-      internalID: 7637025709753042779
       vertices: []
       indices: 
       edges: []
@@ -2692,7 +2566,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon Environment_148
+      name: Spike1
       rect:
         serializedVersion: 2
         x: 240
@@ -2713,7 +2587,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon Environment_149
+      name: Spike2
       rect:
         serializedVersion: 2
         x: 256
@@ -2734,7 +2608,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon Environment_150
+      name: Spike3
       rect:
         serializedVersion: 2
         x: 272
@@ -2755,7 +2629,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon Environment_151
+      name: Spike4
       rect:
         serializedVersion: 2
         x: 288
@@ -3590,6 +3464,69 @@ TextureImporter:
       bones: []
       spriteID: f1b54747d1f9873b0800000000000000
       internalID: -5514482794858521825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: torch1
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 217
+        width: 8
+        height: 17
+      alignment: 9
+      pivot: {x: 0.44338036, y: 0.047053616}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be4f0cf0612f07560800000000000000
+      internalID: 7309608371789821163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: torch2
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 217
+        width: 6
+        height: 19
+      alignment: 9
+      pivot: {x: 0.6132355, y: 0.029174002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf48f2d28dd46900800000000000000
+      internalID: 676909397967392706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: torch3
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 217
+        width: 8
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5849266, y: 0.041093525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e913c6c215475d0800000000000000
+      internalID: -3065736195096863177
       vertices: []
       indices: 
       edges: []
