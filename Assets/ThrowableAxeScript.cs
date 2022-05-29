@@ -6,11 +6,10 @@ public class ThrowableAxeScript : MonoBehaviour
 {
    PlayerMovement scs;
 
-    public float damage;
+    [SerializeField] float damage = 20;
     void Start()
     {
         scs = GameObject.FindObjectOfType<PlayerMovement>();
-        damage = 20;
     }
 
     

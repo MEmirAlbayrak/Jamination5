@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 5810287757033678638}
   m_Layer: 9
   m_Name: Bow
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -251,7 +251,7 @@ MonoBehaviour:
   arrowTrail: {fileID: 0}
   lifeTime: 0
   speed: 15
-  damage: 0
+  damage: 15
   destroyBool: 0
 --- !u!70 &5810287757033678638
 CapsuleCollider2D:

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour, IRealm
 {
-    [SerializeField] [Range(0, 3)] private float spawnTime = 2f;
+    [SerializeField] [Range(0, 5)] private float spawnTimeMin = 0.1f;
+    [SerializeField] [Range(0, 5)] private float spawnTimeMax = 2f;
     [SerializeField] private GameObject _enemyPrefab;
     [SerializeField] private Transform _player;
     [SerializeField] private Transform[] _spawnPoints;
@@ -48,7 +49,7 @@ public class EnemySpawner : MonoBehaviour, IRealm
    private void SpawnZombies()
     {
         _enemySpawnNumber--;
-        spawnTimeCounter = Random.Range(0.1f, spawnTime);
+        spawnTimeCounter = Random.Range(spawnTimeMin, spawnTimeMax);
 
         Instantiate(_enemyPrefab, LookForSpawnPoints(), Quaternion.identity, transform);
     }

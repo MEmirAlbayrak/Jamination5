@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Portal : MonoBehaviour
 {
+    [SerializeField] private bool isLastMap;
     private static Portal portal;
     public static Portal Instance => portal;
 
@@ -24,9 +25,7 @@ public class Portal : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Player")){
-            if (SceneManager.sceneCountInBuildSettings == SceneManager.GetActiveScene().buildIndex + 1) {
-                Debug.Log(SceneManager.sceneCount);
-                Debug.Log("oyun bitti");
+            if (isLastMap) {
                 return;
             }
 

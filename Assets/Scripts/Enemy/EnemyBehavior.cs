@@ -154,7 +154,7 @@ public class EnemyBehavior : MonoBehaviour
        transform.parent.GetComponent<EnemyParent>().TakeDamage(damage);
     }
 
-        private void OnDrawGizmosSelected()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position);

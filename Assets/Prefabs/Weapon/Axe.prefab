@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1412748498824933193}
   m_Layer: 9
   m_Name: Axe
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f1611096bfafb459b30bb9ba810a39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 20
 --- !u!70 &1412748498824933193
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

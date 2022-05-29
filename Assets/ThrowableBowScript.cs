@@ -9,11 +9,10 @@ public class ThrowableBowScript : MonoBehaviour
     public TrailRenderer arrowTrail;
     public float lifeTime;
     public float speed;
-    public float damage;
+    [SerializeField] public float damage = 15;
     public bool destroyBool;
     private void Awake()
     {
-        damage = 10f;
         arrowTrail = GetComponentInChildren<TrailRenderer>();
     }
     void Start()
