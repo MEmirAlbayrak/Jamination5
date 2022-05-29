@@ -49,7 +49,7 @@ public class LevelManager : MonoBehaviour
     }
 
     private void LevelFinished(){
-
+        Portal.Instance.gameObject.SetActive(true);
     }
 }
 
